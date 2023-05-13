@@ -1,0 +1,172 @@
+.main-screen {
+  padding: 51px 0;
+  color: $color-default-white;
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+  @include vp-1200 {
+    padding: 82px 0 82px;
+  }
+
+  @include vp-767 {
+    padding: 51px 0;
+  }
+}
+
+.main-screen__inner {
+  display: grid;
+  grid-template-columns: 395px 500px;
+  gap: 65px;
+
+  @include vp-1200 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.main-screen__informations {
+  padding-top: 123px;
+  text-align: right;
+  position: relative;
+
+  @include vp-1200 {
+    max-width: 324px;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    padding-top: 57px;
+  }
+}
+
+.main-screen__city-name {
+  padding-right: 50px;
+
+  text-align: right;
+  margin: 0 0 25px;
+
+  font-family: $ff-alumi-sans;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+
+  @include vp-1200 {
+    padding-right: 4px;
+
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 41px;
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 14px;
+  }
+}
+
+.main-screen__desc {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 19px;
+  margin-bottom: 48px;
+
+  @include vp-1200 {
+    grid-template-columns: 114px 1fr;
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.main-screen__title {
+  margin: 0;
+  -webkit-text-stroke: 4px;
+
+  font-family: $ff-alumi-sans;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 110.4px;
+  text-align: right;
+  letter-spacing: 0.05em;
+
+  @include vp-1200 {
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: capitalize;
+
+
+    span {
+      text-transform: lowercase;
+    }
+  }
+}
+
+.main-screen__assortment {
+  align-self: end;
+  padding: 0;
+  margin: 0 0 35px;
+  list-style: none;
+
+  li {
+    font-family: $ff-roboto-condensed;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @include vp-1200 {
+    margin: 0 0 20px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    left: 0;
+    top: 182px;
+  }
+}
+
+.main-screen__btn {
+  display: flex;
+  justify-content: center;
+
+  width: 232px;
+
+  margin-left: auto;
+
+  @include vp-1200 {
+    margin-right: -2px;
+    width: 187px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+
+.main-screen__image {
+  width: 500px;
+  height: 556px;
+
+  @include vp-1200 {
+    max-width: 324px;
+    min-width: 324px;
+    max-height: 390px;
+    min-height: 390px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
