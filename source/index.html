@@ -13,12 +13,12 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
+      <div class="container header__inner">
         <a class="header__logo" href="sitemap.html" aria-label="Перейти на главную страницу.">
           <picture>
-            <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile">
-            <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet">
-            <img src="./img/svg/logo-desktop.svg" alt="Логотип SUPERGYM">
+            <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg">
+            <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg">
+            <img src="./img/svg/logo-desktop.svg" alt="Логотип SUPERGYM" width="122" height="44">
           </picture>
         </a>
         <a class="header__phone" href="tel:+88005555555" aria-label="Наш номер телефона.">
@@ -28,20 +28,25 @@
     </header>
 
     <main>
-      <section class="main-sreen">
-        <div class="container main-sreen__inner">
-          <div class="main-sreen__informations">
-            <span class="main-sreen__city-name">ОМСК</span>
-            <h1 class="main-sreen__title">Фитнес Центр</h1>
-            <ul class="main-sreen__assortment">
-              <li>Тренажёрный зал</li>
-              <li>Групповые занятия</li>
-              <li>Кардио-зона</li>
-            </ul>
-            <a class="btn main-sreen__btn" href="#subscriptions">Купить абонемент</a>
+      <section class="main-screen">
+        <div class="container main-screen__inner">
+          <div class="main-screen__informations">
+            <p class="main-screen__city-name">ОМСК</p>
+            <div class="main-screen__desc">
+              <ul class="main-screen__assortment">
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+              <h1 class="main-screen__title">Фитнес<br><span>Центр</span></h1>
+            </div>
+
+            <a class="btn main-screen__btn" href="#subscriptions">Купить абонемент</a>
           </div>
-          <picture class="main-sreen__image">
-            <img src="#" alt="Вы станите настоящими суперменами в нашем зале." srcset="">
+          <picture class="main-screen__image">
+            <source media="(max-width: 1199px)" srcset="img/main-screen/tablet/main-screen@1x.jpg 1x, img/main-screen/tablet/main-srceen@2x.jpg 2x">
+            <img src="img/main-screen/desktop/main-screen@1x.jpg" alt="Вы станите настоящими суперменами в нашем зале."
+              srcset="img/main-screen/desktop/main-screen@1x.jpg 1x, img/main-screen/desktop/main-screen@2x.jpg 2x" width="500" height="556">
           </picture>
         </div>
       </section>
@@ -85,7 +90,8 @@
               <dd>12:00</dd>
             </dl>
             <p class="events__text">Ежегодные соревнования по CrossFit</p>
-            <a class="btn events__btn" href="sitemap.html" aria-label="Кнопка перехода к заполнению заявки.">заполнить заявку</a>
+            <a class="btn events__btn" href="sitemap.html" aria-label="Кнопка перехода к заполнению заявки.">заполнить
+              заявку</a>
           </div>
           <picture class="events__image">
             <img src="" alt="Спостмен заряжен на победу в SUPER GAME.">
@@ -251,7 +257,8 @@
                 <h3 class="main-stock__name">Год</h3>
                 <span class="main-stock__price">4999</span>
                 <p class="main-stock__desc">Безлимитный абонемент в тренажерный зал</p>
-                <a class="main-stock__link" href="sitemap.html" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
+                <a class="main-stock__link" href="sitemap.html"
+                  aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
               </div>
               <picture class="main-stock">
                 <img src="" alt="Светловолосая девушка в спортивной одежде на фоне синего неба.">
@@ -265,7 +272,7 @@
               </li>
               <li class="stock">
                 <h3 class="stock__name">Скидка 20%</h3>
-                <p class="stock__desc">Корпоративный фитнес  с командой</p>
+                <p class="stock__desc">Корпоративный фитнес с командой</p>
                 <a href="" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
               </li>
             </ul>
@@ -286,7 +293,7 @@
 
       <section class="feedback">
         <div class="container feedback__inner">
-          <div class="feedback__form form" >
+          <div class="feedback__form form">
             <div class="form__inner-container" data-form-validate data-callback="base">
               <h2 class="form__title">Бесплатное занятие </h2>
               <form action="https://echo.htmlacademy.ru" method="post">
@@ -298,8 +305,7 @@
                   <label class="visually-hidden" for="user-phone">Поле для ввода имени</label>
                   <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон">
                 </div>
-                <button class="btn" type="submit" aria-label="Отправить заявку."
-                aria-pressed="true">отправить</button>
+                <button class="btn" type="submit" aria-label="Отправить заявку." aria-pressed="true">отправить</button>
               </form>
             </div>
 
@@ -338,8 +344,8 @@
       <div class="container footer__inner">
         <a class="footer__logo" href="sitemap.html" aria-label="Перейти на главную страницу.">
           <picture>
-            <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile-footer">
-            <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet">
+            <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile-footer.svg">
+            <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg">
             <img src="./img/svg/logo-desktop.svg" alt="Логотип SUPERGYM">
           </picture>
         </a>
@@ -350,7 +356,7 @@
             </li>
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#" aria-label="Перейти к разделу Абонементы.">Абонементы</a>
-              </li>
+            </li>
           </ul>
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
