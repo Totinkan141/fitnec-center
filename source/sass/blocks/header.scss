@@ -5,7 +5,11 @@
   right: 0;
   background-color: $color-transparent;
 
-  @include vp-767  {
+  @include vp-1200 {
+    top: 34px;
+  }
+
+  @include vp-767 {
     top: 15px;
   }
 }
@@ -14,24 +18,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-
-  column-count: 2;
 }
 
 .header__logo {
-  max-width: 122px;
+  max-width: 120px;
   max-height: 44px;
   width: 100%;
   height: auto;
 
   @include vp-1200 {
+    margin-top: 6px;
+
     max-width: 82px;
     max-height: 17px;
   }
 
   @include vp-767 {
-    max-width: 69px;
+    margin-top: 0;
+    max-width: 67px;
     max-height: 24px;
   }
 
@@ -39,6 +43,11 @@
     width: 100%;
     height: 100%;
   }
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
 }
 
 .header__phone {
