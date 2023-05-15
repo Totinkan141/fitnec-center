@@ -2032,6 +2032,7 @@ button,
   max-height: 44px;
   width: 100%;
   height: auto;
+  margin-top: 10px;
 }
 @media (max-width: 1199px) {
   .header__logo {
@@ -2400,7 +2401,7 @@ button,
 }
 @media (max-width: 767px) {
   .intro__info {
-    max-width: 260px;
+    min-width: 260px;
   }
 }
 
@@ -2412,7 +2413,7 @@ button,
   word-spacing: -0.05em;
 }
 @media (max-width: 1199px) {
-  .intro__text:last-child {
+  .intro__text:not(:first-child) {
     display: none;
   }
 }
@@ -2426,7 +2427,16 @@ button,
 @media (max-width: 1199px) {
   .intro__image {
     max-width: 100%;
-    max-height: auto;
+  }
+  .intro__image img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .intro__image img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

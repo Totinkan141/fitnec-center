@@ -25,10 +25,10 @@
   max-height: 44px;
   width: 100%;
   height: auto;
+  margin-top: 10px;
 
   @include vp-1200 {
     margin-top: 6px;
-
     max-width: 82px;
     max-height: 17px;
   }
