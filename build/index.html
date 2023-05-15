@@ -80,18 +80,140 @@
               alt="Изображение одного из нашёл тренажёрных залов.">
           </picture>
 
-          <iframe class="intro__video" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" frameborder="0"
+          <!-- <iframe class="intro__video" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            controls allowfullscreen ></iframe>
+            controls allowfullscreen ></iframe> -->
         </div>
       </section>
 
 
       <section class="subscriptions" id="subscriptions">
-        <div class="container subscriptions__inner">
+        <div class="container subscriptions__inner" data-tabs="parent">
           <h2 class="subscriptions__title">Абонементы</h2>
-          табы
+          <div class="subscriptions__tabs" data-tabs="controls">
+            <button class="subscriptions__tab is-active" data-tabs="control" type="button">1 месяц</button>
+            <button class="subscriptions__tab" data-tabs="control" type="button">6 месяцев</button>
+            <button class="subscriptions__tab" data-tabs="control" type="button">12 месяцев</button>
+          </div>
+          <ul class="subscriptions__list" data-tabs="content">
+            <li class="subscription" data-tabs="element">
+              <ul class="subscription__list">
+                <li class="subscription__item">
+                  <h3 class="subscription__name">C тренером</h3>
+                  <p class="subscription__desc">12 занятий</p>
+                  <p class="subscription__price">
+                    <span>5000</span><span>5000</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+                <li class="subscription__item">
+                  <h3 class="subscription__name">Дневной</h3>
+                  <p class="subscription__desc">с 8:00 до 17:00 </p>
+                  <p class="subscription__price">
+                    <span>1700</span><span>1700</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+                <li class="subscription__item">
+                  <h3 class="subscription__name">Полный день</h3>
+                  <p class="subscription__desc">с 8:00 до 22:00 </p>
+                  <p class="subscription__price">
+                    <span>2700</span><span>2700</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+              </ul>
+            </li>
+            <li class="subscription" data-tabs="element">
+              <ul class="subscription__list">
+                <li class="subscription__item">
+                  <h3 class="subscription__name">C тренером</h3>
+                  <p class="subscription__desc">72 занятий</p>
+                  <p class="subscription__price">
+                    <span>24000</span><span>24000</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+                <li class="subscription__item">
+                  <h3 class="subscription__name">Дневной</h3>
+                  <p class="subscription__desc">с 8:00 до 17:00 </p>
+                  <p class="subscription__price">
+                    <span>1550</span><span>1550</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+                <li class="subscription__item">
+                  <h3 class="subscription__name">Полный день</h3>
+                  <p class="subscription__desc">с 8:00 до 22:00 </p>
+                  <p class="subscription__price">
+                    <span>2450</span><span>2450</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+              </ul>
+            </li>
+            <li class="subscription" data-tabs="element">
+              <ul class="subscription__list">
+
+                <li class="subscription__item">
+                  <h3 class="subscription__name">C тренером</h3>
+                  <p class="subscription__desc">144 занятий</p>
+                  <p class="subscription__price">
+                    <span>43500</span><span>43500</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+                <li class="subscription__item">
+                  <h3 class="subscription__name">Дневной</h3>
+                  <p class="subscription__desc">с 8:00 до 17:00 </p>
+                  <p class="subscription__price">
+                    <span>1350</span><span>1350</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+                <li class="subscription__item">
+                  <h3 class="subscription__name">Полный день</h3>
+                  <p class="subscription__desc">с 8:00 до 22:00 </p>
+                  <p class="subscription__price">
+                    <span>2150</span><span>2150</span>
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
+                    </svg>
+                  </p>
+                  <button class="subscription__btn-order btn btn--dark-blue" type="button">купить абонемент</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+        <picture class="subscriptions__image">
+          <source media="(max-width: 1119px)" srcset="img/subscriptions/tablet/subscriptions@1x.png 1x, img/subscriptions/tablet/subscriptions@2x.png 2x">
+          <img alt="Два красных блина для грифа каждый весом 35кг." width="321" height="384" srcset="img/subscriptions/desktop/subscriptions@1x.png 1x, img/subscriptions/desktop/subscriptions@2x.png 2x">
+        </picture>
       </section>
 
       <section class="events">

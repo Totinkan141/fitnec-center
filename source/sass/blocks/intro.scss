@@ -56,9 +56,10 @@
   font-family: $ff-alumi-sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 58px;
-  letter-spacing: 0.02em;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  word-spacing: -0.2em;
 
   @include vp-1200 {
     font-size: 42px;
