@@ -6,6 +6,10 @@
   @include vp-1200 {
     padding: 104px 0;
   }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
 }
 
 .subscriptions__inner {
@@ -15,6 +19,10 @@
 
   @include vp-1200 {
     padding: 0 163px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
   }
 }
 
@@ -29,11 +37,19 @@
   letter-spacing: 0.03em;
 
   @include vp-1200 {
-    margin: 0 0 19px;
+    margin-bottom: 19px;
 
     font-size: 42px;
     line-height: 50px;
     transform: translate(-8px, 0);
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    line-height: 38px;
+    transform: translate(-5px, 0);
   }
 }
 
@@ -58,6 +74,12 @@
     margin-bottom: 57px;
     column-gap: 53px;
   }
+
+  @include vp-767 {
+    margin-bottom: 48px;
+    column-gap: 38px;
+    min-width: 290px;
+  }
 }
 
 .subscriptions__tab {
@@ -79,6 +101,15 @@
   @include vp-1200 {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+
+    &:not(:last-of-type) {
+      padding-right: 6px;
+    }
   }
 }
 
@@ -119,5 +150,9 @@
     height: 443px;
     bottom: -122px;
     right: -76px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }

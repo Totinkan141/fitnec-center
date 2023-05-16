@@ -2304,7 +2304,7 @@ button,
 }
 @media (max-width: 767px) {
   .intro {
-    padding: 70px 0;
+    padding: 65px 0;
   }
 }
 
@@ -2336,6 +2336,7 @@ button,
 @media (max-width: 767px) {
   .intro__inner {
     padding: 0;
+    gap: 0;
   }
 }
 
@@ -2379,6 +2380,14 @@ button,
     margin: 0;
   }
 }
+@media (max-width: 767px) {
+  .intro__title {
+    margin-bottom: 4px;
+    font-size: 32px;
+    line-height: 38px;
+    word-spacing: -0.1em;
+  }
+}
 
 .intro__subtitle {
   margin: 0 0 40px;
@@ -2390,6 +2399,12 @@ button,
   .intro__subtitle {
     font-weight: 400;
     margin-bottom: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__subtitle {
+    margin-bottom: 24px;
+    word-spacing: -0.1em;
   }
 }
 
@@ -2405,7 +2420,13 @@ button,
 }
 @media (max-width: 767px) {
   .intro__info {
+    margin-bottom: 33px;
     min-width: 260px;
+  }
+}
+@media (max-width: 374px) {
+  .intro__info {
+    max-width: 258px;
   }
 }
 
@@ -2438,6 +2459,9 @@ button,
   }
 }
 @media (max-width: 767px) {
+  .intro__image {
+    margin-bottom: 40px;
+  }
   .intro__image img {
     width: 100%;
     -o-object-fit: cover;
@@ -2494,6 +2518,11 @@ button,
     padding: 104px 0;
   }
 }
+@media (max-width: 767px) {
+  .subscriptions {
+    padding: 70px 0;
+  }
+}
 
 .subscriptions__inner {
   display: -webkit-box;
@@ -2512,6 +2541,11 @@ button,
     padding: 0 163px;
   }
 }
+@media (max-width: 767px) {
+  .subscriptions__inner {
+    padding: 0 15px;
+  }
+}
 
 .subscriptions__title {
   margin: 0 0 17px;
@@ -2524,12 +2558,22 @@ button,
 }
 @media (max-width: 1199px) {
   .subscriptions__title {
-    margin: 0 0 19px;
+    margin-bottom: 19px;
     font-size: 42px;
     line-height: 50px;
     -webkit-transform: translate(-8px, 0);
         -ms-transform: translate(-8px, 0);
             transform: translate(-8px, 0);
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 38px;
+    -webkit-transform: translate(-5px, 0);
+        -ms-transform: translate(-5px, 0);
+            transform: translate(-5px, 0);
   }
 }
 
@@ -2563,6 +2607,15 @@ button,
             column-gap: 53px;
   }
 }
+@media (max-width: 767px) {
+  .subscriptions__tabs {
+    margin-bottom: 48px;
+    -webkit-column-gap: 38px;
+       -moz-column-gap: 38px;
+            column-gap: 38px;
+    min-width: 290px;
+  }
+}
 
 .subscriptions__tab {
   position: relative;
@@ -2584,6 +2637,15 @@ button,
   .subscriptions__tab {
     font-size: 18px;
     line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions__tab {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .subscriptions__tab:not(:last-of-type) {
+    padding-right: 6px;
   }
 }
 
@@ -2625,6 +2687,11 @@ button,
     right: -76px;
   }
 }
+@media (max-width: 767px) {
+  .subscriptions__image {
+    display: none;
+  }
+}
 
 .subscription {
   width: 100%;
@@ -2644,7 +2711,7 @@ button,
   .subscription__list {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
-    gap: 41px;
+    gap: 37px;
   }
 }
 
@@ -2689,6 +2756,11 @@ button,
   color: #ffffff;
   padding: 23px 25px;
 }
+@media (max-width: 767px) {
+  .subscription__item {
+    padding: 44px 13px;
+  }
+}
 
 .subscription__name {
   margin: 0 0 10px;
@@ -2696,6 +2768,12 @@ button,
   font-size: 26px;
   line-height: 29px;
   color: #102654;
+}
+@media (max-width: 767px) {
+  .subscription__name {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .subscription__desc {
@@ -2706,6 +2784,11 @@ button,
   line-height: 24px;
   word-spacing: -0.16em;
   color: #495a7d;
+}
+@media (max-width: 767px) {
+  .subscription__desc {
+    margin-bottom: 53px;
+  }
 }
 
 .subscription__price {
@@ -2744,6 +2827,29 @@ button,
 .subscription__price svg {
   position: relative;
   top: 25px;
+}
+@media (max-width: 767px) {
+  .subscription__price {
+    gap: 14px;
+    margin-bottom: 29px;
+  }
+  .subscription__price span:first-of-type {
+    font-size: 80px;
+    line-height: 120px;
+    top: -43px;
+  }
+  .subscription__price span:last-of-type {
+    font-size: 48px;
+    line-height: 72px;
+    -webkit-transform: translate(3px, 0);
+        -ms-transform: translate(3px, 0);
+            transform: translate(3px, 0);
+  }
+  .subscription__price svg {
+    width: 24px;
+    height: 33px;
+    top: 20px;
+  }
 }
 
 .subscription__btn-order {
