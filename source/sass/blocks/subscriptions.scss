@@ -1,6 +1,7 @@
 .subscriptions {
   background-color: $color-gray;
   padding: 120px 0;
+  position: relative;
 }
 
 .subscriptions__inner {
@@ -21,7 +22,7 @@
 }
 
 .subscriptions__tabs {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
   position: relative;
   display: flex;
@@ -77,4 +78,13 @@
   list-style: none;
 
   width: 100%;
+}
+
+.subscriptions__image {
+  position: absolute;
+  width: 470px;
+  height: 493px;
+  content: "";
+  bottom: -151px;
+  right: -183px;
 }

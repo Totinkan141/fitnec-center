@@ -2487,6 +2487,7 @@ button,
 .subscriptions {
   background-color: #f8f9fC;
   padding: 120px 0;
+  position: relative;
 }
 
 .subscriptions__inner {
@@ -2513,7 +2514,7 @@ button,
 }
 
 .subscriptions__tabs {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2574,6 +2575,15 @@ button,
   width: 100%;
 }
 
+.subscriptions__image {
+  position: absolute;
+  width: 470px;
+  height: 493px;
+  content: "";
+  bottom: -151px;
+  right: -183px;
+}
+
 .subscription {
   width: 100%;
 }
@@ -2590,12 +2600,13 @@ button,
 }
 
 .subscription__item {
-  padding: 46px 13px;
+  padding: 57px 13px;
   border: solid 7px rgba(255, 255, 255, 0);
   width: 100%;
   height: 100%;
   max-height: 448px;
   background-color: #ffffff;
+  overflow-y: scroll;
   text-align: center;
 }
 @media (hover: hover) {
@@ -2623,6 +2634,62 @@ button,
   border: none;
   color: #ffffff;
   padding: 23px 25px;
+}
+
+.subscription__name {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+}
+
+.subscription__desc {
+  margin: 0 0 65px;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  word-spacing: -0.16em;
+  color: #495a7d;
+}
+
+.subscription__price {
+  margin: 0 0 33px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+.subscription__price span {
+  font-weight: 700;
+}
+.subscription__price span:first-of-type {
+  position: absolute;
+  content: "";
+  font-size: 100px;
+  line-height: 150px;
+  top: -53px;
+  z-index: -1;
+  color: rgba(232, 232, 232, 0.48);
+}
+.subscription__price span:last-of-type {
+  color: #103aae;
+  font-size: 60px;
+  line-height: 90px;
+}
+.subscription__price svg {
+  position: relative;
+  top: 25px;
 }
 
 .subscription__btn-order {
