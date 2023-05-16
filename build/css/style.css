@@ -2489,6 +2489,11 @@ button,
   padding: 120px 0;
   position: relative;
 }
+@media (max-width: 1199px) {
+  .subscriptions {
+    padding: 104px 0;
+  }
+}
 
 .subscriptions__inner {
   display: -webkit-box;
@@ -2502,6 +2507,11 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1199px) {
+  .subscriptions__inner {
+    padding: 0 163px;
+  }
+}
 
 .subscriptions__title {
   margin: 0 0 17px;
@@ -2511,6 +2521,16 @@ button,
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .subscriptions__title {
+    margin: 0 0 19px;
+    font-size: 42px;
+    line-height: 50px;
+    -webkit-transform: translate(-8px, 0);
+        -ms-transform: translate(-8px, 0);
+            transform: translate(-8px, 0);
+  }
 }
 
 .subscriptions__tabs {
@@ -2535,6 +2555,14 @@ button,
   bottom: -13px;
   background-color: rgba(120, 120, 120, 0.2);
 }
+@media (max-width: 1199px) {
+  .subscriptions__tabs {
+    margin-bottom: 57px;
+    -webkit-column-gap: 53px;
+       -moz-column-gap: 53px;
+            column-gap: 53px;
+  }
+}
 
 .subscriptions__tab {
   position: relative;
@@ -2551,6 +2579,12 @@ button,
   -webkit-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+}
+@media (max-width: 1199px) {
+  .subscriptions__tab {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .subscriptions__tab.is-active {
@@ -2583,6 +2617,14 @@ button,
   bottom: -151px;
   right: -183px;
 }
+@media (max-width: 1199px) {
+  .subscriptions__image {
+    width: 423px;
+    height: 443px;
+    bottom: -122px;
+    right: -76px;
+  }
+}
 
 .subscription {
   width: 100%;
@@ -2598,6 +2640,13 @@ button,
   grid-template-columns: repeat(3, minmax(304px, 360px));
   gap: 40px;
 }
+@media (max-width: 1199px) {
+  .subscription__list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    gap: 41px;
+  }
+}
 
 .subscription__item {
   padding: 57px 13px;
@@ -2607,7 +2656,12 @@ button,
   max-height: 448px;
   background-color: #ffffff;
   overflow-y: scroll;
+  scrollbar-width: none;
   text-align: center;
+}
+.subscription__item::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 @media (hover: hover) {
   .subscription__item:hover:not(.focus-visible) {

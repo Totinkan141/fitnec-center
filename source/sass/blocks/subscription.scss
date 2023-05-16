@@ -10,6 +10,11 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(304px, 360px));
   gap: 40px;
+
+  @include vp-1200 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 41px;
+  }
 }
 
 .subscription__item {
@@ -20,6 +25,13 @@
   max-height: 448px;
   background-color: $color-default-white;
   overflow-y: scroll;
+
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 
   text-align: center;
 
