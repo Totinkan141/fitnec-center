@@ -2427,6 +2427,7 @@ button,
   width: 100%;
   max-height: 401px;
   height: auto;
+  background-color: #f8f9fC;
 }
 @media (max-width: 1199px) {
   .intro__image {
@@ -2452,6 +2453,10 @@ button,
   background-color: #102654;
   left: 540px;
   bottom: -115px;
+}
+.intro__video iframe {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .intro__video {
@@ -2508,7 +2513,7 @@ button,
 }
 
 .subscriptions__tabs {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2585,7 +2590,7 @@ button,
 }
 
 .subscription__item {
-  padding: 61px 13px;
+  padding: 46px 13px;
   border: solid 7px rgba(255, 255, 255, 0);
   width: 100%;
   height: 100%;
@@ -2599,11 +2604,44 @@ button,
        border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
   }
+  .subscription__item:hover:not(.focus-visible) .subscription__btn-order {
+    background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: none;
+    color: #ffffff;
+    padding: 23px 25px;
+  }
 }
 .subscription__item.focus-visible:focus {
   -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
      border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
+}
+.subscription__item.focus-visible:focus .subscription__btn-order {
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: none;
+  color: #ffffff;
+  padding: 23px 25px;
+}
+
+.subscription__btn-order {
+  max-width: 206px;
+  width: 100%;
+  min-height: 68px;
+  border-width: 2px;
+  padding: 25px;
+}
+.subscription__btn-order span {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 [data-tabs=parent] {
