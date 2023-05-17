@@ -3058,6 +3058,110 @@ button,
   opacity: 1;
 }
 
+.events {
+  padding: 123px 0 53px;
+}
+
+.events__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 1fr;
+  grid-template-columns: 500px 1fr;
+  gap: 0;
+}
+
+.events__info {
+  color: #ffffff;
+  padding: 81px 78px 75px 75px;
+  background-color: #ed0233;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
+
+.events__name {
+  margin: 4px 0 0 13px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-family: "Alumni Sans", "Georgia", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.events__announcement {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+.events__announcement dt {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+}
+.events__announcement dd {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
+}
+.events__announcement dd:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+.events__announcement dd small {
+  margin-top: 8px;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.events__text {
+  margin-top: -11px;
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 27px;
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+}
+
+.events__btn {
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+  min-height: 69px;
+}
+.events__btn span {
+  margin: auto;
+}
+
+.events__image {
+  background-color: #102654;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
