@@ -12,6 +12,7 @@ body {
   min-width: $vp-320;
   scroll-behavior: smooth;
   font-family: $ff-roboto-condensed;
+  overflow-x: hidden;
 }
 
 html {
