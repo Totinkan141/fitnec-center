@@ -3071,16 +3071,16 @@ button,
 }
 
 .events__info {
-  color: #ffffff;
-  padding: 81px 78px 75px 75px;
-  background-color: #ed0233;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 96px;
+  grid-template-columns: 1fr 96px;
   -webkit-column-gap: 60px;
      -moz-column-gap: 60px;
           column-gap: 60px;
+  color: #ffffff;
+  padding: 81px 78px 75px 75px;
+  background-color: #ed0233;
 }
 
 .events__name {
@@ -3117,14 +3117,20 @@ button,
   line-height: 27px;
 }
 .events__announcement dd {
-  font-family: "Roboto Condensed", "Tahoma", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 60px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
   -webkit-column-gap: 6px;
      -moz-column-gap: 6px;
           column-gap: 6px;
@@ -3159,7 +3165,15 @@ button,
 }
 
 .events__image {
+  height: 100%;
+  width: auto;
   background-color: #102654;
+}
+.events__image img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* @mixin hover-focus {
