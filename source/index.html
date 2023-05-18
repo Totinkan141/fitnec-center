@@ -92,9 +92,9 @@
               <source media="(max-width: 1199px)" srcset="img/intro/video/tablet/preview.jpg 1x">
               <img srcset="img/intro/video/desktop/preview.jpg 1x" alt="Превью видеоролика ">
             </picture>
-            <iframe src="" frameborder="0"
+            <!-- <iframe src="" frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            controls allowfullscreen data-video="element"></iframe>
+            controls allowfullscreen data-video="element"></iframe> -->
           </div>
         </div>
       </section>
@@ -234,12 +234,16 @@
         <div class="container events__inner">
           <div class="events__info">
             <h3 class="events__name">SUPER GAMES</h3>
-            <dl class="events__announcement">
-              <dt>Дата</dt>
-              <dd>7 <small>Марта<br>2019</small></dd>
-              <dt>Время</dt>
-              <dd>12:00</dd>
-            </dl>
+            <ul class="events__announcements">
+              <li class="events__announcement">
+                <h3 class="events__suptitle">Дата</h3>
+                <span class="events__suptext">7<small>Марта<br>2019</small></span>
+              </li>
+              <li class="events__announcement">
+                <h3 class="events__suptitle">Время</h3>
+                <span class="events__suptext events__suptext--time">12:00</span>
+              </li>
+            </ul>
             <p class="events__text">Ежегодные соревнования по CrossFit</p>
             <a class="btn events__btn" href="sitemap.html" aria-label="Кнопка перехода к заполнению заявки."><span>заполнить заявку</span> </a>
           </div>
