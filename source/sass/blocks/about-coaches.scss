@@ -1,11 +1,17 @@
 .about-coaches {
   padding: 53px 0;
+
+  @include vp-1200 {
+    padding: 48px 0;
+  }
 }
 
 .about-coaches__inner {
-  // padding: 0 47px;
+  position: relative;
 
-
+  @include vp-1200 {
+    padding: 0 101px;
+  }
 }
 
 .about-coaches__title {
@@ -17,10 +23,23 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+
+  @include vp-1200 {
+    margin: 0 0 31px;
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    transform: translate(-2px, 0);
+  }
 }
 
 .about-coaches__swiper {
   position: relative;
+
+  @include vp-1200 {
+    max-width: 566px;
+    margin: 0 auto;
+  }
 }
 
 .about-coaches__swiper-wrapper {

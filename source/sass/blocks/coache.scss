@@ -11,6 +11,15 @@
   padding: 54px 33px 24px;
   transition: all $trans-600;
 
+  @include vp-1200 {
+    max-width: 268px;
+    padding: 52px 32px 25px 38px;
+
+    @include hover-focus {
+      padding: 53px 33px 24px 29px;
+    }
+  }
+
   @include hover-focus {
     flex-direction: column;
 
@@ -61,6 +70,13 @@
   left: 0;
   right: 0;
   bottom: 0;
+  object-fit: cover;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .coache__info {
