@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0 53px;
+    padding: 70px 0 30px;
   }
 }
 
@@ -45,7 +45,7 @@
     min-height: 290px;
   }
 }
-// 17 - 25 27 - 31
+
 .events__name {
   margin: 4px 0 0 13px;
   width: min-content;
@@ -99,13 +99,17 @@
     height: 1px;
     left: 0;
     right: 0;
-    bottom: -1px;
+    bottom: -5px;
     background-color: $color-default-white;
   }
 
   @include vp-1200 {
     font-size: 12px;
     line-height: 18px;
+
+    &::after {
+      bottom: -1px;
+    }
   }
 }
 
