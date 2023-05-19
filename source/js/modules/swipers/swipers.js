@@ -13,9 +13,10 @@ const initCoachesSwiper = () => {
         },
 
         breakpoints: {
-          290: {
+          319: {
+            initialSlide: 2,
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
           },
 
           767: {

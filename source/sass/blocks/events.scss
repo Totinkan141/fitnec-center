@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0 53px;
+    padding: 70px 0 30px;
   }
 }
 
@@ -45,6 +45,7 @@
     min-height: 290px;
   }
 }
+
 .events__name {
   margin: 4px 0 0 13px;
   width: min-content;

@@ -3073,7 +3073,7 @@ button,
 }
 @media (max-width: 767px) {
   .events {
-    padding: 70px 0 53px;
+    padding: 70px 0 30px;
   }
 }
 
@@ -3332,6 +3332,11 @@ button,
     padding: 48px 0;
   }
 }
+@media (max-width: 767px) {
+  .about-coaches {
+    padding: 35px 0 48px;
+  }
+}
 
 .about-coaches__inner {
   position: relative;
@@ -3339,6 +3344,11 @@ button,
 @media (max-width: 1199px) {
   .about-coaches__inner {
     padding: 0 101px;
+  }
+}
+@media (max-width: 767px) {
+  .about-coaches__inner {
+    padding: 0 47px;
   }
 }
 
@@ -3362,6 +3372,13 @@ button,
             transform: translate(-2px, 0);
   }
 }
+@media (max-width: 767px) {
+  .about-coaches__title {
+    margin-bottom: 41px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
 
 .about-coaches__swiper {
   position: relative;
@@ -3370,6 +3387,11 @@ button,
   .about-coaches__swiper {
     max-width: 566px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .about-coaches__swiper {
+    max-width: 290px;
   }
 }
 
@@ -3389,14 +3411,29 @@ button,
   z-index: 2;
   padding: 0;
 }
+@media (max-width: 767px) {
+  .about-coaches__swiper-btn {
+    top: 117px;
+  }
+}
 .about-coaches__swiper-btn--prev {
   left: -56px;
+}
+@media (max-width: 767px) {
+  .about-coaches__swiper-btn--prev {
+    left: -38px;
+  }
 }
 .about-coaches__swiper-btn--next {
   right: -56px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+@media (max-width: 767px) {
+  .about-coaches__swiper-btn--next {
+    right: -38px;
+  }
 }
 
 .coache {
@@ -3435,6 +3472,22 @@ button,
 @media (max-width: 1199px) {
   .coache.focus-visible:focus {
     padding: 53px 33px 24px 29px;
+  }
+}
+@media (max-width: 767px) {
+  .coache {
+    max-width: 226px;
+    max-height: 274px;
+  }
+}
+@media (max-width: 767px) and (hover: hover) {
+  .coache:hover:not(.focus-visible) {
+    padding: 43px 33px;
+  }
+}
+@media (max-width: 767px) {
+  .coache.focus-visible:focus {
+    padding: 43px 33px;
   }
 }
 @media (hover: hover) {
@@ -3537,6 +3590,11 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 13px;
+}
+@media (max-width: 767px) {
+  .coache__achievements {
+    padding-left: 16px;
+  }
 }
 
 .coache__achievement {
