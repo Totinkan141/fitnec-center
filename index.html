@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>Фитнес Центр</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -258,139 +258,141 @@
       <section class="about-coaches">
         <div class="container about-coaches__inner">
           <h2 class="about-coaches__title">Тренеры</h2>
-          <div class="about-coaches__swiper swiper-container" data-swiper="coaches">
-            <button class="about-coaches__swiper-btn about-coaches__swiper-btn--prev">
-              <svg width="26" height="42">
-                <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-              </svg>
-            </button>
-            <div class="about-coaches__swiper-wrapper swiper-wrapper">
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Анна Павлова</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+          <div class="about-coaches__swiper"">
+            <div class="swiper" data-swiper="coaches">
+              <div class="swiper-wrapper about-coaches__swiper-wrapper">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Анна Павлова</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <source media="(max-width: 1199px)" srcset="">
+                    <img srcset="img/about-coaches/coache-1@1x.jpg 1x, img/about-coaches/coache-1@2x.jpg 2x" alt="Тренер Анна Павлова.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <source media="(max-width: 1199px)" srcset="">
-                  <img srcset="img/about-coaches/coache-1@1x.jpg 1x, img/about-coaches/coache-1@2x.jpg 2x" alt="Тренер Анна Павлова.">
-                </picture>
-              </div>
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Алексей Лавров</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Алексей Лавров</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
 
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Анна Павлова.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Анна Павлова.">
-                </picture>
-              </div>
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Александр Пашков</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Александр Пашков</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
 
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Александр Пашков.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Александр Пашков.">
-                </picture>
-              </div>
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Мария Кетова</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Мария Кетова</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
 
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <img srcset="img/about-coaches/coache-4@1x.jpg 1x, img/about-coaches/coache-4@2x.jpg 2x" alt="Тренер Анна Павлова.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-4@1x.jpg 1x, img/about-coaches/coache-4@2x.jpg 2x" alt="Тренер Анна Павлова.">
-                </picture>
-              </div>
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Анна Павлова</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Анна Павлова</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
 
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <img srcset="img/about-coaches/coache-1@1x.jpg 1x, img/about-coaches/coache-1@2x.jpg 2x" alt="Тренер Анна Павлова.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-1@1x.jpg 1x, img/about-coaches/coache-1@2x.jpg 2x" alt="Тренер Анна Павлова.">
-                </picture>
-              </div>
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Алексей Лавров</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Алексей Лавров</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
 
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Анна Павлова.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Анна Павлова.">
-                </picture>
-              </div>
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Александр Пашков</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Александр Пашков</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
 
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Александр Пашков.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x" alt="Тренер Александр Пашков.">
-                </picture>
-              </div>
-              <div class="about-coaches__item coache swiper-slide">
-                <h3 class="coache__name">Мария Кетова</h3>
-                <p class="coache__position">CrossFit</p>
-                <div class="coache__info">
+                <div class="about-coaches__item coache swiper-slide">
+                  <h3 class="coache__name">Мария Кетова</h3>
+                  <p class="coache__position">CrossFit</p>
+                  <div class="coache__info">
 
-                  <ul class="coache__achievements">
-                    <li class="coache__achievement">Certified Level 3 Trainer</li>
-                    <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
-                    <li class="coache__achievement">Опыт — 6 лет</li>
-                  </ul>
+                    <ul class="coache__achievements">
+                      <li class="coache__achievement">Certified Level 3 Trainer</li>
+                      <li class="coache__achievement">Победитель чемпионата России по CrossFit </li>
+                      <li class="coache__achievement">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <picture class="coache__photo">
+                    <img srcset="img/about-coaches/coache-4@1x.jpg 1x, img/about-coaches/coache-4@2x.jpg 2x" alt="Тренер Анна Павлова.">
+                  </picture>
                 </div>
-                <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-4@1x.jpg 1x, img/about-coaches/coache-4@2x.jpg 2x" alt="Тренер Анна Павлова.">
-                </picture>
               </div>
             </div>
-            <button class="about-coaches__swiper-btn about-coaches__swiper-btn--next">
-              <svg width="26" height="42">
-                <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-              </svg>
-            </button>
+            <button class="about-coaches__swiper-btn about-coaches__swiper-btn--prev">
+                <svg width="26" height="42">
+                  <use xlink:href="img/sprite.svg#swiper-arrow"></use>
+                </svg>
+              </button>
+              <button class="about-coaches__swiper-btn about-coaches__swiper-btn--next">
+                <svg width="26" height="42">
+                  <use xlink:href="img/sprite.svg#swiper-arrow"></use>
+                </svg>
+              </button>
           </div>
         </div>
       </section>

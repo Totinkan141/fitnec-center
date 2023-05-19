@@ -2833,6 +2833,10 @@ button,
   padding: 53px 0;
 }
 
+.about-coaches__inner {
+  position: relative;
+}
+
 .about-coaches__title {
   margin: 0 0 48px;
   color: #102654;
@@ -2845,7 +2849,6 @@ button,
 
 .about-coaches__swiper {
   position: relative;
-  margin: 0 72px;
 }
 
 .about-coaches__swiper-wrapper {
@@ -3314,6 +3317,10 @@ button,
     padding: 48px 0;
   }
 
+  .about-coaches__inner {
+    padding: 0 101px;
+  }
+
   .about-coaches__title {
     margin: 0 0 31px;
     text-align: center;
@@ -3325,11 +3332,23 @@ button,
   }
 
   .about-coaches__swiper {
-    margin: 0 56px;
+    max-width: 566px;
+    margin: 0 auto;
   }
 
   .coache {
     max-width: 268px;
+    padding: 52px 32px 25px 38px;
+  }
+
+  .coache.focus-visible:focus {
+    padding: 53px 33px 24px 29px;
+  }
+}
+
+@media (max-width: 1199px) and (hover: hover) {
+  .coache:hover:not(.focus-visible) {
+    padding: 53px 33px 24px 29px;
   }
 }
 
@@ -3531,7 +3550,7 @@ button,
   }
 
   .events {
-    padding: 70px 0 53px;
+    padding: 70px 0 30px;
   }
 
   .events__inner {
@@ -3546,6 +3565,49 @@ button,
 
   .events__text {
     margin: -2px 0 30px;
+  }
+
+  .about-coaches {
+    padding: 35px 0 48px;
+  }
+
+  .about-coaches__inner {
+    padding: 0 47px;
+  }
+
+  .about-coaches__title {
+    margin-bottom: 41px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .about-coaches__swiper {
+    max-width: 290px;
+  }
+
+  .about-coaches__swiper-btn {
+    top: 117px;
+  }
+
+  .about-coaches__swiper-btn--prev {
+    left: -38px;
+  }
+
+  .about-coaches__swiper-btn--next {
+    right: -38px;
+  }
+
+  .coache {
+    max-width: 226px;
+    max-height: 274px;
+  }
+
+  .coache.focus-visible:focus {
+    padding: 43px 33px;
+  }
+
+  .coache__achievements {
+    padding-left: 16px;
   }
 }
 
@@ -3609,6 +3671,12 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+}
+
+@media (max-width: 767px) and (hover: hover) {
+  .coache:hover:not(.focus-visible) {
+    padding: 43px 33px;
   }
 }
 
