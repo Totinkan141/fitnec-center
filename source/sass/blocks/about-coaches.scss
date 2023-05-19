@@ -1,0 +1,50 @@
+.about-coaches {
+  padding: 53px 0;
+}
+
+.about-coaches__inner {
+  // padding: 0 47px;
+
+
+}
+
+.about-coaches__title {
+  margin: 0 0 48px;
+
+  color: $color-dark-blue;
+  font-family: $ff-alumi-sans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+}
+
+.about-coaches__swiper {
+  position: relative;
+}
+
+.about-coaches__swiper-wrapper {
+  position: relative;
+}
+
+.about-coaches__swiper-btn {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 42px;
+  top: 131px;
+  background-color: $color-transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+
+  &--prev {
+    left: -56px;
+  }
+
+  &--next {
+    right: -56px;
+    transform: rotate(180deg);
+  }
+}
