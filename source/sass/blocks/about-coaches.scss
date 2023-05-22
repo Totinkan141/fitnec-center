@@ -75,6 +75,7 @@
   cursor: pointer;
   z-index: 2;
   padding: 0;
+  background-image: url("../../img/svg/swiper-arrow.svg");
 
   @include vp-767 {
     top: 117px;

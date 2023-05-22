@@ -1,0 +1,37 @@
+.review {
+  width: 100%;
+  max-width: 566px;
+  background-color: $color-secondary-blue;
+  color: $color-default-white;
+  padding: 55px 60px 55px 170px;
+
+  position: relative;
+}
+
+.review__avatar {
+  max-width: 80px;
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+
+  border-radius: 50%;
+
+  position: absolute;
+  top: 62px;
+  left: 62px;
+}
+
+.review__name {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.review__blockquote {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  word-spacing: -0.1em;
+}

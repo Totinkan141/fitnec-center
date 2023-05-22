@@ -406,16 +406,8 @@
               </div>
             </div>
           </div>
-          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--prev">
-            <svg width="26" height="42">
-              <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-            </svg>
-          </button>
-          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--next">
-            <svg width="26" height="42">
-              <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-            </svg>
-          </button>
+          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--prev"></button>
+          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--next"></button>
         </div>
   </div>
   </section>
@@ -490,9 +482,12 @@
               aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </div>
           <picture class="main-stock__image">
-            <source media="(max-width: 767px)" srcset="img/stocks/mobile/stocks@1x.jpg 1x, img/stocks/mobile/stocks@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="img/stocks/tablet/stocks@1x.jpg 1x, img/stocks/tablet/stocks@2x.jpg 2x">
-            <img srcset="img/stocks/desktop/stocks@1x.jpg 1x, img/stocks/desktop/stocks@2x.jpg 2x" alt="Светловолосая девушка в спортивной одежде на фоне синего неба." width="280" height="462">
+            <source media="(max-width: 767px)"
+              srcset="img/stocks/mobile/stocks@1x.jpg 1x, img/stocks/mobile/stocks@2x.jpg 2x">
+            <source media="(max-width: 1199px)"
+              srcset="img/stocks/tablet/stocks@1x.jpg 1x, img/stocks/tablet/stocks@2x.jpg 2x">
+            <img srcset="img/stocks/desktop/stocks@1x.jpg 1x, img/stocks/desktop/stocks@2x.jpg 2x"
+              alt="Светловолосая девушка в спортивной одежде на фоне синего неба." width="280" height="462">
           </picture>
         </div>
         <ul class="stocks__list">
@@ -513,13 +508,38 @@
 
   <section class="reviews">
     <div class="container reviews__inner">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+      <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__swiper">
+        <div class="swiper" data-swiper="reviews">
+          <div class="swiper-wrapper reviews__swiper-wrapper">
+            <div class="reviews__item review swiper-slide">
+              <picture class="review__avatar">
+                <source media="(max-width: 768px)" srcset="img/reviews/mobile/review-1@1x.png 1x, img/reviews/mobile/review-1@2x.png 2x">
+                <img
+                  srcset="img/reviews/desktop-tablet/review-1@1x.png 1x, img/reviews/desktop-tablet/review-1@2x.png 2x"
+                  alt="Аватар Анны Орловы." width="80" height="80">
+              </picture>
+              <h3 class="review__name">Анна Орлова</h3>
+              <blockquote class="review__blockquote">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+            </div>
+            <div class="reviews__item review swiper-slide">
+              <picture class="review__avatar">
+                <source media="(max-width: 768px)" srcset="img/reviews/mobile/review-1@1x.png 1x, img/reviews/mobile/review-1@2x.png 2x">
+                <img
+                  srcset="img/reviews/desktop-tablet/review-1@1x.png 1x, img/reviews/desktop-tablet/review-1@2x.png 2x"
+                  alt="Аватар Анны Орловы." width="80" height="80">
+              </picture>
+              <h3 class="review__name">Александр Варшава</h3>
+              <blockquote class="review__blockquote">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+            </div>
+          </div>
+        </div>
+        <button class="reviews__swiper-btn reviews__swiper-btn--prev"></button>
+        <button class="reviews__swiper-btn reviews__swiper-btn--next"></button>
+      </div>
+
   </section>
 
   <section class="feedback">
@@ -569,7 +589,6 @@
       </div>
     </div>
   </section>
-
   </main>
   <footer class="footer">
     <div class="container footer__inner">
