@@ -484,24 +484,26 @@
         <div class="stocks__main-stock main-stock">
           <div class="main-stock__info">
             <h3 class="main-stock__name">Год</h3>
-            <span class="main-stock__price">4999</span>
-            <p class="main-stock__desc">Безлимитный абонемент в тренажерный зал</p>
+            <p class="main-stock__price">4999</p>
+            <p class="main-stock__description">Безлимитный абонемент в тренажерный зал</p>
             <a class="main-stock__link" href="sitemap.html"
               aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </div>
-          <picture class="main-stock">
-            <img src="" alt="Светловолосая девушка в спортивной одежде на фоне синего неба.">
+          <picture class="main-stock__image">
+            <source media="(max-width: 767px)" srcset="img/stocks/mobile/stocks@1x.jpg 1x, img/stocks/mobile/stocks@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/stocks/tablet/stocks@1x.jpg 1x, img/stocks/tablet/stocks@2x.jpg 2x">
+            <img srcset="img/stocks/desktop/stocks@1x.jpg 1x, img/stocks/desktop/stocks@2x.jpg 2x" alt="Светловолосая девушка в спортивной одежде на фоне синего неба." width="280" height="462">
           </picture>
         </div>
         <ul class="stocks__list">
           <li class="stock">
             <h3 class="stock__name">Месяц бесплатно</h3>
-            <p class="stock__desc">Приведи друга, получи абонемент в подарок</p>
+            <p class="stock__desc">Приведи друга,получи абонемент&nbsp;в&nbsp;подарок</p>
             <a href="" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </li>
           <li class="stock">
-            <h3 class="stock__name">Скидка 20%</h3>
-            <p class="stock__desc">Корпоративный фитнес с командой</p>
+            <h3 class="stock__name">Скидка 20<small>%</small></h3>
+            <p class="stock__desc">Корпоративный фитнес с&nbsp;командой</p>
             <a href="" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </li>
         </ul>
