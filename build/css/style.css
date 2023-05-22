@@ -3649,10 +3649,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  row-gap: 144px;
+  row-gap: 158px;
 }
 .benefits__list:first-of-type {
   -ms-grid-column: 1;
@@ -3718,6 +3715,13 @@ button,
 
 .benefit__value,
 .benefit__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
 }
 .benefit__value dd,
@@ -3728,8 +3732,8 @@ button,
   max-width: max-content;
 }
 
-.benefit__value:nth-child(1n) {
-  margin-top: -8px;
+.benefit__value {
+  row-gap: 7px;
 }
 .benefit__value dd {
   background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
@@ -3739,7 +3743,7 @@ button,
   color: rgba(255, 255, 255, 0);
   font-weight: 700;
   font-size: 71px;
-  line-height: 71px;
+  line-height: 53px;
 }
 .benefit__value dt {
   margin-top: -3px;
@@ -3749,11 +3753,10 @@ button,
   line-height: 21px;
 }
 
-.benefit__description:nth-child(1n+1) {
-  padding-top: 3px;
+.benefit__description {
+  row-gap: 11px;
 }
 .benefit__description dt {
-  margin-bottom: 10px;
   color: #102654;
   font-weight: 700;
   font-size: 22px;
