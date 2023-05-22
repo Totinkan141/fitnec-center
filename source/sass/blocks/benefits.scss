@@ -18,15 +18,17 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+  word-spacing: -0.1em;
 }
 
 .benefits__content {
   display: grid;
-  grid-template-columns: minmax(342px, 1fr) 240px 1fr;
+  grid-template-columns: minmax(300px, 342px) 240px minmax(300px, 338px);
   column-gap: 58px;
 }
 
 .benefits__list {
+  width: 342px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -60,7 +62,7 @@
   min-height: 307px;
   height: max-content;
   padding: 53px 24px 45px;
-  background-color: $color-dark-blue;
+  background-color: $color-secondary-blue;
 
   text-align: center;
   color: $color-default-white;
@@ -87,4 +89,4 @@
   }
 }
 
-// 15--20 
+// 15--20 22--27 27--32 35--37 38--40 43--44

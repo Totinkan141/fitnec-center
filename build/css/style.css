@@ -3626,19 +3626,21 @@ button,
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
+  word-spacing: -0.1em;
 }
 
 .benefits__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(342px, 1fr) 240px 1fr;
-  grid-template-columns: minmax(342px, 1fr) 240px 1fr;
+  -ms-grid-columns: minmax(300px, 342px) 240px minmax(300px, 338px);
+  grid-template-columns: minmax(300px, 342px) 240px minmax(300px, 338px);
   -webkit-column-gap: 58px;
      -moz-column-gap: 58px;
           column-gap: 58px;
 }
 
 .benefits__list {
+  width: 342px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -3686,7 +3688,7 @@ button,
   height: -moz-max-content;
   height: max-content;
   padding: 53px 24px 45px;
-  background-color: #102654;
+  background-color: #1c3374;
   text-align: center;
   color: #ffffff;
 }
@@ -3711,6 +3713,17 @@ button,
 .benefit {
   display: -ms-grid;
   display: grid;
+  position: relative;
+}
+.benefit::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -78px;
+}
+.benefit:nth-of-type(2n - 1)::after {
+  content: "";
+  background-color: #d10a42;
 }
 
 .benefit__value,
