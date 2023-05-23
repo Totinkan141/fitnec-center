@@ -48,7 +48,7 @@
           </div>
           <picture class="main-screen__image">
             <source media="(max-width: 1199px)"
-              srcset="img/main-screen/tablet/main-screen@1x.jpg 1x, img/main-screen/tablet/main-srceen@2x.jpg 2x">
+              srcset="img/main-screen/tablet/main-screen@1x.jpg 1x, img/main-screen/tablet/main-screen@2x.jpg 2x">
             <img src="img/main-screen/desktop/main-screen@1x.jpg" alt="Вы станите настоящими суперменами в нашем зале."
               srcset="img/main-screen/desktop/main-screen@1x.jpg 1x, img/main-screen/desktop/main-screen@2x.jpg 2x"
               width="500" height="556">
@@ -406,16 +406,8 @@
               </div>
             </div>
           </div>
-          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--prev">
-            <svg width="26" height="42">
-              <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-            </svg>
-          </button>
-          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--next">
-            <svg width="26" height="42">
-              <use xlink:href="img/sprite.svg#swiper-arrow"></use>
-            </svg>
-          </button>
+          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--prev"></button>
+          <button class="about-coaches__swiper-btn about-coaches__swiper-btn--next"></button>
         </div>
   </div>
   </section>
@@ -423,52 +415,56 @@
   <section class="benefits">
     <div class="container benefits__inner">
       <h2 class="benefits__title">Наши преимущества</h2>
-      <ul class="benefits__list">
-        <li class="benefit">
-          <dl class="benefit__value">
-            <dd>900</dd>
-            <dt>кв/м</dt>
-          </dl>
-          <dl class="benefit__description">
-            <dt>Площадь </dt>
-            <dd>Занимайтесь без очередей и толпучки</dd>
-          </dl>
-        </li>
-        <li class="benefit">
-          <dl class="benefit__value">
-            <dd>900</dd>
-            <dt>кв/м</dt>
-          </dl>
-          <dl class="benefit__description">
-            <dt>Площадь </dt>
-            <dd>Занимайтесь без очередей и толпучки</dd>
-          </dl>
-        </li>
-        <li class="benefit">
-          <dl class="benefit__value">
-            <dd>900</dd>
-            <dt>кв/м</dt>
-          </dl>
-          <dl class="benefit__description">
-            <dt>Площадь </dt>
-            <dd>Занимайтесь без очередей и толпучки</dd>
-          </dl>
-        </li>
-        <li class="benefit">
-          <dl class="benefit__value">
-            <dd>900</dd>
-            <dt>кв/м</dt>
-          </dl>
-          <dl class="benefit__description">
-            <dt>Площадь </dt>
-            <dd>Занимайтесь без очередей и толпучки</dd>
-          </dl>
-        </li>
-      </ul>
-      <div class="benefits__additional">
-        <span>100</span>
-        <h3>Тренажеров</h3>
-        <p>Современные тренажеры на все группы мышц</p>
+      <div class="benefits__content">
+        <ul class="benefits__list">
+          <li class="benefit">
+            <dl class="benefit__value">
+              <dd>900</dd>
+              <dt>кв/м</dt>
+            </dl>
+            <dl class="benefit__description">
+              <dt>Площадь </dt>
+              <dd>Занимайтесь без очередей&nbsp;и&nbsp;толпучки</dd>
+            </dl>
+          </li>
+          <li class="benefit">
+            <dl class="benefit__value">
+              <dd>350</dd>
+              <dt>мест</dt>
+            </dl>
+            <dl class="benefit__description">
+              <dt>Комфорт</dt>
+              <dd>Просторные раздевалки, душевые, фен,Wi-Fi,кулеры</dd>
+            </dl>
+          </li>
+        </ul>
+        <div class="benefits__additional">
+          <span>100</span>
+          <h3>Тренажеров</h3>
+          <p>Современные тренажеры на все группы мышц</p>
+        </div>
+        <ul class="benefits__list">
+          <li class="benefit">
+            <dl class="benefit__value">
+              <dd>70</dd>
+              <dt>машин</dt>
+            </dl>
+            <dl class="benefit__description">
+              <dt>Собственная парковка</dt>
+              <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
+            </dl>
+          </li>
+          <li class="benefit">
+            <dl class="benefit__value">
+              <dd>5<small>+</small></dd>
+              <dt>лет</dt>
+            </dl>
+            <dl class="benefit__description">
+              <dt>Тренерский опыт</dt>
+              <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
+            </dl>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -480,24 +476,29 @@
         <div class="stocks__main-stock main-stock">
           <div class="main-stock__info">
             <h3 class="main-stock__name">Год</h3>
-            <span class="main-stock__price">4999</span>
-            <p class="main-stock__desc">Безлимитный абонемент в тренажерный зал</p>
+            <p class="main-stock__price">4999</p>
+            <p class="main-stock__description">Безлимитный абонемент в тренажерный зал</p>
             <a class="main-stock__link" href="sitemap.html"
               aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </div>
-          <picture class="main-stock">
-            <img src="" alt="Светловолосая девушка в спортивной одежде на фоне синего неба.">
+          <picture class="main-stock__image">
+            <source media="(max-width: 767px)"
+              srcset="img/stocks/mobile/stocks@1x.jpg 1x, img/stocks/mobile/stocks@2x.jpg 2x">
+            <source media="(max-width: 1199px)"
+              srcset="img/stocks/tablet/stocks@1x.jpg 1x, img/stocks/tablet/stocks@2x.jpg 2x">
+            <img srcset="img/stocks/desktop/stocks@1x.jpg 1x, img/stocks/desktop/stocks@2x.jpg 2x"
+              alt="Светловолосая девушка в спортивной одежде на фоне синего неба." width="280" height="462">
           </picture>
         </div>
         <ul class="stocks__list">
           <li class="stock">
             <h3 class="stock__name">Месяц бесплатно</h3>
-            <p class="stock__desc">Приведи друга, получи абонемент в подарок</p>
+            <p class="stock__desc">Приведи друга,получи абонемент&nbsp;в&nbsp;подарок</p>
             <a href="" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </li>
           <li class="stock">
-            <h3 class="stock__name">Скидка 20%</h3>
-            <p class="stock__desc">Корпоративный фитнес с командой</p>
+            <h3 class="stock__name">Скидка 20<small>%</small></h3>
+            <p class="stock__desc">Корпоративный фитнес с&nbsp;командой</p>
             <a href="" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </li>
         </ul>
@@ -507,13 +508,38 @@
 
   <section class="reviews">
     <div class="container reviews__inner">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+      <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__swiper">
+        <div class="swiper" data-swiper="reviews">
+          <div class="swiper-wrapper reviews__swiper-wrapper">
+            <div class="reviews__item review swiper-slide">
+              <picture class="review__avatar">
+                <source media="(max-width: 768px)" srcset="img/reviews/mobile/review-1@1x.png 1x, img/reviews/mobile/review-1@2x.png 2x">
+                <img
+                  srcset="img/reviews/desktop-tablet/review-1@1x.png 1x, img/reviews/desktop-tablet/review-1@2x.png 2x"
+                  alt="Аватар Анны Орловы." width="80" height="80">
+              </picture>
+              <h3 class="review__name">Анна Орлова</h3>
+              <blockquote class="review__blockquote">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+            </div>
+            <div class="reviews__item review swiper-slide">
+              <picture class="review__avatar">
+                <source media="(max-width: 768px)" srcset="img/reviews/mobile/review-1@1x.png 1x, img/reviews/mobile/review-1@2x.png 2x">
+                <img
+                  srcset="img/reviews/desktop-tablet/review-1@1x.png 1x, img/reviews/desktop-tablet/review-1@2x.png 2x"
+                  alt="Аватар Анны Орловы." width="80" height="80">
+              </picture>
+              <h3 class="review__name">Александр Варшава</h3>
+              <blockquote class="review__blockquote">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+            </div>
+          </div>
+        </div>
+        <button class="reviews__swiper-btn reviews__swiper-btn--prev"></button>
+        <button class="reviews__swiper-btn reviews__swiper-btn--next"></button>
+      </div>
+
   </section>
 
   <section class="feedback">
@@ -563,7 +589,6 @@
       </div>
     </div>
   </section>
-
   </main>
   <footer class="footer">
     <div class="container footer__inner">

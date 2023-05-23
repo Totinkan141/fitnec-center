@@ -1,0 +1,127 @@
+.benefits {
+  padding: 97px 0 130px;
+  background-color: $color-gray;
+
+}
+
+.benefits__inner {
+  padding: 0 164px;
+}
+
+.benefits__title {
+  margin: 0 0 54px;
+  text-align: center;
+  transform: translate(8px, 0);
+
+  font-family: $ff-alumi-sans;
+  color: $color-dark-blue;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  word-spacing: -0.1em;
+
+
+}
+
+.benefits__content {
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: minmax(300px, 342px) 240px minmax(300px, 338px);
+  column-gap: 58px;
+
+  @include vp-1200 {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}
+
+.benefits__list {
+  width: 342px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 158px;
+
+  @include vp-1200 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    justify-content: space-between;
+  }
+
+  &:first-of-type {
+    grid-column: 1 / 2;
+
+    li {
+      padding-left: 20px;
+      grid-template-columns: 108px 1fr;
+      column-gap: 30px;
+    }
+
+    @include vp-1200 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &:last-of-type {
+    grid-column: 3 / 4;
+
+    li {
+      grid-template-columns: 78px 1fr;
+      column-gap: 24px;
+    }
+
+    @include vp-1200 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }
+}
+
+.benefits__additional {
+  grid-column: 2 / 3;
+
+  min-height: 307px;
+  height: max-content;
+  padding: 53px 24px 45px;
+  background-color: $color-secondary-blue;
+
+  text-align: center;
+  color: $color-default-white;
+
+  @include vp-1200 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    max-width: 442px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 77px;
+  }
+
+  h3 {
+    margin: 0 0 33px;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+// 4--9 10--17 19--
