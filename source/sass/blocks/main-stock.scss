@@ -94,6 +94,15 @@
       bottom: 0;
     }
   }
+
+  @include hover-focus {
+    color: $color-dark-blue;
+    transition: all $trans-default;
+
+    &::after {
+      background-color: $color-dark-blue;
+    }
+  }
 }
 
 .main-stock__image {

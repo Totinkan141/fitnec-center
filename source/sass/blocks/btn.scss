@@ -30,6 +30,8 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-default-white;
+    color: $color-dark-blue;
+    transition: all $trans-default;
   }
 }
