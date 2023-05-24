@@ -10,12 +10,3 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
-.feedback__form {
-  background-color: $color-dark-blue;
-  color: $color-default-white;
-}
-
-.feedback__contacts {
-  border-top: 1px solid $color-light-slate-grey;
-}
