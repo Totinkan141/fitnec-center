@@ -113,6 +113,11 @@
       padding-right: 6px;
     }
   }
+
+  @include hover-focus {
+    opacity: 1;
+    transition: opacity $trans-default;
+  }
 }
 
 .subscriptions__tab.is-active {

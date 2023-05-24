@@ -65,4 +65,13 @@
       bottom: -1px;
     }
   }
+
+  @include hover-focus {
+    color: $color-red;
+    transition: all $trans-default;
+
+    &::after {
+      background-color: $color-red;
+    }
+  }
 }

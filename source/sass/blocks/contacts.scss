@@ -1,12 +1,34 @@
 .contacts {
-  padding-top: 64px;
+  padding-top: 63px;
   color: $color-dark-blue;
   background-color: $color-transparent;
+  padding-bottom: 50px;
+
+  border-top: 1px solid $color-light-slate-grey;
+
+  @include vp-1200 {
+    padding-block: 66px;
+    border-top: 0;
+  }
+
+  @include vp-767 {
+    padding-block: 67px;
+  }
 }
 
 .contacts__inner-container {
   margin-inline: 120px auto;
   max-width: 404px;
+
+  @include vp-1200 {
+    max-width: 503px;
+    margin-inline: auto;
+    padding-right: 47px;
+  }
+
+  @include vp-767 {
+    padding-inline: 15px;
+  }
 }
 
 .contacts__title {
@@ -17,6 +39,16 @@
   font-size: 54px;
   line-height: 1;
   letter-spacing: 0.03em;
+
+  @include vp-1200 {
+    margin-bottom: 41px;
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+    font-size: 32px;
+  }
 }
 
 .contacts__info {
@@ -25,6 +57,17 @@
   column-count: 2;
   column-gap: 120px;
   position: relative;
+
+  @include vp-1200 {
+    margin-inline: 0;
+    column-gap: 96px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+  }
 
   &::after {
     position: absolute;
@@ -35,6 +78,14 @@
     bottom: 2px;
     left: 230px;
     background-color: $color-light-slate-grey;
+
+    @include vp-1200 {
+      left: 266px;
+    }
+
+    @include vp-767 {
+      content: none;
+    }
   }
 }
 
@@ -48,12 +99,31 @@
   flex-direction: column;
   column-gap: 120px;
   row-gap: 25px;
+
+  @include vp-1200 {
+    row-gap: 30px;
+  }
+
+  @include vp-767 {
+    row-gap: 29px;
+  }
 }
 
 .contacts__item {
   display: flex;
   flex-direction: column;
   gap: 11px;
+
+  @include vp-1200 {
+    row-gap: 15px;
+  }
+
+  @include hover-focus {
+    a {
+      color: rgba($color-red, 0.8);
+      transition: color $trans-default;
+    }
+  }
 }
 
 .contacts__name {
@@ -61,6 +131,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
+
+  @include vp-1200 {
+    font-size: 20px;
+  }
 }
 
 .contacts__description {
@@ -73,4 +147,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
+
+  @include vp-1200 {
+    font-size: 18px;
+  }
 }
