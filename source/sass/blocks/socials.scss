@@ -1,11 +1,15 @@
 .socials {
   padding: 0;
   list-style: none;
-  width: 97px;
+  min-width: 97px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 11px;
+
+  @include vp-767 {
+    min-width: 100%;
+  }
 }
 
 .socials__item {

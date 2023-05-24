@@ -4207,13 +4207,13 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts {
-    padding-top: 66px;
+    padding-block: 66px;
     border-top: 0;
   }
 }
 @media (max-width: 767px) {
   .contacts {
-    padding-top: 67px;
+    padding-block: 67px;
   }
 }
 
@@ -4402,7 +4402,7 @@ button,
 }
 
 .footer__inner {
-  padding-block: 43px 32px;
+  padding-block: 43px 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4410,7 +4410,28 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 60px;
+  gap: 40px;
+}
+@media (max-width: 1199px) {
+  .footer__inner {
+    padding-block: 47px 41px;
+    padding-inline: 45px 39px;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 142px 1fr;
+    grid-template-columns: 142px 1fr;
+    padding-inline: 15px;
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
+    row-gap: 15px;
+    padding-bottom: 52px;
+  }
 }
 
 .footer__logo {
@@ -4419,6 +4440,31 @@ button,
   height: -moz-max-content;
   height: max-content;
   padding-block: 8px;
+}
+@media (max-width: 1199px) {
+  .footer__logo {
+    padding-block: 2px 8px;
+  }
+  .footer__logo img {
+    min-width: 82px;
+    min-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    max-width: 68px;
+    padding-block: 4px 7px;
+  }
+  .footer__logo img {
+    min-width: 68px;
+    min-height: 15px;
+  }
 }
 @media (hover: hover) {
   .footer__logo:hover:not(.focus-visible) {
@@ -4435,7 +4481,14 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.footer__nav {
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 250px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4446,21 +4499,47 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 40px;
-  margin-left: 218px;
 }
-
-.footer__nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 40px;
+.footer__nav-list:first-of-type {
+  margin-left: 238px;
+}
+@media (max-width: 1199px) {
+  .footer__nav-list:first-of-type {
+    margin-left: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav-list:first-of-type {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin-left: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .footer__nav-list {
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+  }
+  .footer__nav-list:last-of-type {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
 }
 
 .footer__nav-item {
@@ -4471,6 +4550,11 @@ button,
   color: inherit;
   font-size: 14px;
   line-height: 1;
+}
+@media (max-width: 767px) {
+  .footer__link {
+    font-size: 16px;
+  }
 }
 @media (hover: hover) {
   .footer__link:hover:not(.focus-visible) {
@@ -4490,11 +4574,21 @@ button,
 .footer__socials {
   margin: 0 0 0 auto;
 }
+@media (max-width: 767px) {
+  .footer__socials {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 4;
+    grid-row: 4;
+    margin: 2px 0 0;
+  }
+}
 
 .socials {
   padding: 0;
   list-style: none;
-  width: 97px;
+  min-width: 97px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4505,6 +4599,11 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 11px;
+}
+@media (max-width: 767px) {
+  .socials {
+    min-width: 100%;
+  }
 }
 
 .socials__item {
