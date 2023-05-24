@@ -18,16 +18,20 @@
 .main-stock__info {
   background-color: $color-saturated-red;
   color: $color-default-white;
-  padding: 33px 40px 47px 45px;
+  padding: 34px 40px 47px 45px;
   display: flex;
   flex-direction: column;
+
+  @include vp-1200 {
+    padding-bottom: 46px;
+  }
 
   @include vp-767 {
     min-height: 299px;
     max-width: 100%;
     align-items: center;
     text-align: center;
-    padding: 33px 44px 45px;
+    padding: 34px 44px 45px;
   }
 }
 
@@ -44,8 +48,13 @@
   font-size: 70px;
   line-height: 60px;
 
+  @include vp-1200 {
+    margin-bottom: 25px;
+    line-height: 58px;
+  }
+
   @include vp-767 {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 }
 
@@ -78,8 +87,12 @@
     height: 1px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     background-color: $color-default-white;
+
+    @include vp-767 {
+      bottom: 0;
+    }
   }
 }
 
