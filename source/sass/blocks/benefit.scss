@@ -1,46 +1,63 @@
 .benefit {
-  display: grid;
+  display: flex;
+  column-gap: 30px;
   position: relative;
 
   &::after {
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: -78px;
+    bottom: -77px;
+    background-color: rgba($color-red, 0.2);
   }
 
-  &:nth-of-type(2n - 1)::after {
+  &:nth-of-type(1)::after {
     content: "";
-    background-color: $color-red;
+    left: -20px;
   }
-}
 
-.benefit__value,
-.benefit__description {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+  &:nth-of-type(2)::after {
+    content: "";
+  }
 
-  dd {
-    margin: 0;
-    max-width: max-content;
+  &:nth-of-type(1)::after,
+  &:nth-of-type(2)::after {
+    @include vp-1200 {
+      content: none;
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    row-gap: 6px;
+    text-align: center;
+    min-height: 142px;
   }
 }
 
 .benefit__value {
-  row-gap: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0;
+  background: linear-gradient(127.61deg, $color-red 0, #0041ca 45.58%);
+  background-clip: text;
 
-  dd {
-    background: linear-gradient(142.51deg, $color-red 0%, #0041ca 87.33%);
-    background-clip: text;
+  color: $color-transparent;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 1;
 
-    color: $color-transparent;
-    font-weight: 700;
-    font-size: 71px;
-    line-height: 53px;
+  @include vp-1200 {
+    font-size: 58px;
   }
 
-  dt {
+  @include vp-767 {
+    background: linear-gradient(142.51deg, $color-red 0, #0041ca 87.33%);
+    background-clip: text;
+  }
+
+  span {
     margin-top: -3px;
     color: $color-blue-purple;
     font-weight: 400;
@@ -50,20 +67,33 @@
 }
 
 .benefit__description {
+  display: flex;
+  flex-direction: column;
   row-gap: 11px;
 
-  dt {
+  @include vp-1200 {
+    row-gap: 2px;
+  }
+
+  h3 {
+    margin: 10px 0 0;
     color: $color-dark-blue;
     font-weight: 700;
     font-size: 22px;
     line-height: 22px;
+
+    @include vp-1200 {
+      margin-top: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
-  dd {
+  p {
+    margin: 0;
     width: 100%;
     font-size: 16px;
     line-height: 22px;
     font-weight: 300;
   }
 }
-

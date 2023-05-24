@@ -9,9 +9,10 @@ $color-light-blue:                  #103aae;
 $color-opacity-blue:                rgba(20, 54, 122, 0.5);
 $color-purple:                      #00359f;
 $color-blue-purple:                 #2e35ac;
-$color-gray:                        #f8f9fc;
-$color-secondary-gray:              #e8e8e8;
-$color-light-gray:                  rgba(120, 120, 120, 0.2);
+$color-grey:                        #f8f9fc;
+$color-light-slate-grey:            #74819c;
+$color-secondary-grey:              #e8e8e8;
+$color-light-grey:                  rgba(120, 120, 120, 0.2);
 $color-red:                         #d10a42;
 $color-saturated-red:               #ed0233;
 $color-default-black:               #000000;
@@ -36,8 +37,8 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-roboto-condensed:               "Roboto Condensed", "Tahoma", sans-serif;
-$ff-alumi-sans:                     "Alumni Sans", "Georgia", serif;
+$ff-roboto-condensed:               "Roboto Condensed", "Arial", sans-serif;
+$ff-alumi-sans:                     "Alumni Sans", "Arial", sans-serif;
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
 
 // Animation
