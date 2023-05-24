@@ -5,9 +5,14 @@
 
 .form__inner-container {
   max-width: 410px;
-  padding-top: 71px;
-  padding-bottom: 67px;
+  padding: 71px 0 67px;
   margin-inline: auto 170px;
+
+  @include vp-1200 {
+    max-width: 502px;
+    padding: 65px 30px 68px 0;
+    margin-inline: auto;
+  }
 }
 
 .form__title {
@@ -17,6 +22,20 @@
   font-size: 54px;
   line-height: 1;
   letter-spacing: 0.03em;
+
+  @include vp-1200 {
+    margin-bottom: 30px;
+    font-size: 42px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.form__input {
+  max-width: 190px;
+
+  @include vp-1200 {
+    max-width: 206px;
+  }
 }
 
 .form__wrapper {
@@ -27,26 +46,29 @@
     column-gap: 30px;
     row-gap: 28px;
 
+    @include vp-1200 {
+      column-gap: 60px;
+    }
+
     input {
-      min-height: 36px;
-      max-width: 190px;
+      max-height: 36px;
       width: 100%;
       color: inherit;
       background-color: $color-transparent;
       border-radius: 0;
       border: 0;
-      border-bottom: solid 2px $color-light-slate-grey;
+      border-bottom: 2px solid $color-light-slate-grey;
       padding: 13px 5px 5px 0;
       font-size: 14px;
       line-height: 16px;
       outline: none;
 
       &:-webkit-autofill {
-        font-size: inherit;
+        font-size: 14px;
+        line-height: 16px;
         -webkit-text-fill-color: $color-default-white;
         box-shadow: 0 0 0 1000px $color-dark-blue inset;
         transform: translate(0, 0);
-        border-top: none;
         transition: background-color 5000s ease-in-out 0s;
       }
 
@@ -80,3 +102,5 @@
     }
   }
 }
+
+// 2--17 22--

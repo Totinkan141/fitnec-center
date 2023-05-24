@@ -3917,6 +3917,11 @@ button,
 .feedback {
   padding: 75px 0;
 }
+@media (max-width: 1199px) {
+  .feedback {
+    padding: 58px 0;
+  }
+}
 
 .feedback__inner {
   max-width: 100%;
@@ -3928,6 +3933,17 @@ button,
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 1199px) {
+  .feedback__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .form {
   color: #ffffff;
@@ -3936,9 +3952,15 @@ button,
 
 .form__inner-container {
   max-width: 410px;
-  padding-top: 71px;
-  padding-bottom: 67px;
+  padding: 71px 0 67px;
   margin-inline: auto 170px;
+}
+@media (max-width: 1199px) {
+  .form__inner-container {
+    max-width: 502px;
+    padding: 65px 30px 68px 0;
+    margin-inline: auto;
+  }
 }
 
 .form__title {
@@ -3948,6 +3970,22 @@ button,
   font-size: 54px;
   line-height: 1;
   letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .form__title {
+    margin-bottom: 30px;
+    font-size: 42px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.form__input {
+  max-width: 190px;
+}
+@media (max-width: 1199px) {
+  .form__input {
+    max-width: 206px;
+  }
 }
 
 .form__wrapper form {
@@ -3961,28 +3999,34 @@ button,
           column-gap: 30px;
   row-gap: 28px;
 }
+@media (max-width: 1199px) {
+  .form__wrapper form {
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
+  }
+}
 .form__wrapper form input {
-  min-height: 36px;
-  max-width: 190px;
+  max-height: 36px;
   width: 100%;
   color: inherit;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 0;
   border: 0;
-  border-bottom: solid 2px #74819c;
+  border-bottom: 2px solid #74819c;
   padding: 13px 5px 5px 0;
   font-size: 14px;
   line-height: 16px;
   outline: none;
 }
 .form__wrapper form input:-webkit-autofill {
-  font-size: inherit;
+  font-size: 14px;
+  line-height: 16px;
   -webkit-text-fill-color: #ffffff;
   -webkit-box-shadow: 0 0 0 1000px #102654 inset;
           box-shadow: 0 0 0 1000px #102654 inset;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-  border-top: none;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -4050,6 +4094,11 @@ button,
   font-size: 54px;
   line-height: 1;
   letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .contacts__title {
+    font-size: 42px;
+  }
 }
 
 .contacts__info {
