@@ -4,11 +4,11 @@
   position: relative;
 
   @include vp-1200 {
-    padding: 104px 0;
+    padding: 101px 0;
   }
 
   @include vp-767 {
-    padding: 65px 0 72px;
+    padding: 64px 0 70px;
   }
 }
 
@@ -36,16 +36,18 @@
   line-height: 65px;
   letter-spacing: 0.03em;
 
+  transform: translate(-2px, 0);
+
   @include vp-1200 {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 
     font-size: 42px;
     line-height: 50px;
-    transform: translate(-8px, 0);
+    transform: translate(-7px, 0);
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     font-size: 32px;
     line-height: 38px;
@@ -148,7 +150,7 @@
   @include vp-1200 {
     width: 423px;
     height: 443px;
-    bottom: -122px;
+    bottom: -124px;
     right: -76px;
   }
 

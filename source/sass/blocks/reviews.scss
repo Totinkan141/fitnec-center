@@ -1,12 +1,12 @@
 .reviews {
-  padding: 46px 0;
+  padding: 47px 0 45px;
 
   @include vp-1200 {
     padding: 42px 0;
   }
 
   @include vp-767 {
-    padding: 19px 0 50px;
+    padding: 19px 0 40px;
   }
 }
 
