@@ -1,0 +1,58 @@
+.footer {
+  background-color: $color-black-russian;
+}
+
+.footer__inner {
+  padding-block: 43px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.footer__logo {
+  cursor: pointer;
+  height: max-content;
+  padding-block: 8px;
+
+  @include hover-focus {
+    opacity: 0.65;
+    transition: opacity $trans-default;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-left: 218px;
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.footer__nav-item {
+  color: $color-default-white;
+}
+
+.footer__link {
+  color: inherit;
+  font-size: 14px;
+  line-height: 1;
+
+  @include hover-focus {
+    color: $color-red;
+    transition: color $trans-default;
+  }
+}
+
+.footer__socials {
+  margin: 0 0 0 auto;
+}

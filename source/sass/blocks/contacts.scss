@@ -1,10 +1,14 @@
 .contacts {
-  padding-top: 64px;
+  padding-top: 63px;
   color: $color-dark-blue;
   background-color: $color-transparent;
+  padding-bottom: 50px;
+
+  border-top: 1px solid $color-light-slate-grey;
 
   @include vp-1200 {
     padding-top: 66px;
+    border-top: 0;
   }
 
   @include vp-767 {
@@ -51,11 +55,12 @@
   margin-left: 4px;
   display: flex;
   column-count: 2;
-  column-gap: 96px;
+  column-gap: 120px;
   position: relative;
 
   @include vp-1200 {
     margin-inline: 0;
+    column-gap: 96px;
   }
 
   @include vp-767 {
@@ -111,6 +116,13 @@
 
   @include vp-1200 {
     row-gap: 15px;
+  }
+
+  @include hover-focus {
+    a {
+      color: rgba($color-red, 0.8);
+      transition: color $trans-default;
+    }
   }
 }
 

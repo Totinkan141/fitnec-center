@@ -42,7 +42,6 @@
   @include hover-focus {
     border-image: linear-gradient(148.82deg, $color-red 0.85%, $color-purple 100%);
     border-image-slice: 1;
-
   }
 
   @include vp-767 {
