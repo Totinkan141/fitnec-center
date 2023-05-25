@@ -8,6 +8,18 @@
   <meta name="description" content="Описание проекта">
   <title>Фитнес Центр</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -48,8 +60,14 @@
           </div>
           <picture class="main-screen__image">
             <source media="(max-width: 1199px)"
+              srcset="img/main-screen/tablet/main-screen@1x.webp 1x, img/main-screen/tablet/main-screen@2x.webp 2x"
+              type="image/webp">
+            <source media="(max-width: 1199px)"
               srcset="img/main-screen/tablet/main-screen@1x.jpg 1x, img/main-screen/tablet/main-screen@2x.jpg 2x">
-            <img src="img/main-screen/desktop/main-screen@1x.jpg" alt="Вы станите настоящими суперменами в нашем зале."
+            <source media="(min-width: 1200px)"
+              srcset="img/main-screen/desktop/main-screen@1x.webp 1x, img/main-screen/desktop/main-screen@2x.webp 2x"
+              type="image/webp">
+            <img alt="Вы станите настоящими суперменами в нашем зале."
               srcset="img/main-screen/desktop/main-screen@1x.jpg 1x, img/main-screen/desktop/main-screen@2x.jpg 2x"
               width="500" height="556">
           </picture>
@@ -74,24 +92,42 @@
           </div>
           <picture class="intro__image">
             <source media="(max-width: 354px)"
+              srcset="img/intro/mobile/intro@1x.webp 1x, img/intro/mobile/intro@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 354px)"
               srcset="img/intro/mobile/intro@1x.jpg 1x, img/intro/mobile/intro@2x.jpg 2x">
             <source media="(max-width: 1199px)"
+              srcset="img/intro/tablet/intro@1x.webp 1x, img/intro/tablet/intro@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1199px)"
               srcset="img/intro/tablet/intro@1x.jpg 1x, img/intro/tablet/intro@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/intro/desktop/intro@1x.webp 1x, img/intro/desktop/intro@2x.webp 2x" type="image/webp">
             <img srcset="img/intro/desktop/intro@1x.jpg 1x, img/intro/desktop/intro@2x.jpg 2x"
-              alt="Изображение одного из нашёл тренажёрных залов.">
+              alt="Изображение одного из нашёл тренажёрных залов." width="660" height="401">
           </picture>
 
           <div class="intro__video video" data-video>
-            <button class="video__play" type="button" data-video="button">
+            <button class="video__play" type="button" data-video="button" aria-label="Кнопка проигрывания видеоролика.">
               <svg width="17" height="17">
                 <use xlink:href="img/sprite.svg#icon-play"></use>
               </svg>
             </button>
 
             <picture class="video__preview" data-video="poster">
-              <source media="(max-width: 374px)" srcset="img/intro/video/mobile/preview.jpg 1x">
-              <source media="(max-width: 1199px)" srcset="img/intro/video/tablet/preview.jpg 1x">
-              <img srcset="img/intro/video/desktop/preview.jpg 1x" alt="Превью видеоролика ">
+              <source media="(max-width: 374px)"
+                srcset="img/intro/video/mobile/preview@1x.webp 1x, img/intro/video/mobile/preview@2x.webp 2x"
+                type="image/webp">
+              <source media="(max-width: 374px)"
+                srcset="img/intro/video/mobile/preview@1x.jpg 1x, img/intro/video/mobile/preview@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+                srcset="img/intro/video/tablet/preview@1x.webp 1x, img/intro/video/tablet/preview@2x.webp 2x"
+                type="image/webp">
+              <source media="(max-width: 1199px)"
+                srcset="img/intro/video/tablet/preview@1x.jpg 1x, img/intro/video/tablet/preview@2x.jpg 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/intro/video/desktop/preview@1x.webp 1x, img/intro/video/desktop/preview@2x.webp 2x"
+                type="image/webp">
+              <img srcset="img/intro/video/desktop/preview@1x.jpg 1x, img/intro/video/desktop/preview@2x.jpg 2x"
+                alt="Превью видеоролика." width="364" height="228">
             </picture>
           </div>
         </div>
@@ -231,8 +267,14 @@
           </ul>
         </div>
         <picture class="subscriptions__image">
+          <source media="(max-width: 1199px)"
+            srcset="img/subscriptions/tablet/subscriptions@1x.webp 1x, img/subscriptions/tablet/subscriptions@2x.webp 2x"
+            type="image/webp">
           <source media="(max-width: 1119px)"
             srcset="img/subscriptions/tablet/subscriptions@1x.png 1x, img/subscriptions/tablet/subscriptions@2x.png 2x">
+          <source media="(min-width: 1200px)"
+            srcset="img/subscriptions/desktop/subscriptions@1x.webp 1x, img/subscriptions/desktop/subscriptions@2x.webp 2x"
+            type="image/webp">
           <img alt="Два красных блина для грифа каждый весом 35кг." width="470" height="493"
             srcset="img/subscriptions/desktop/subscriptions@1x.png 1x, img/subscriptions/desktop/subscriptions@2x.png 2x">
         </picture>
@@ -259,16 +301,22 @@
           </div>
           <picture class="events__image">
             <source media="(max-width: 767px)"
+              srcset="img/events/mobile/events@1x.webp 1x, img/events/mobile/events@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)"
               srcset="img/events/mobile/events@1x.jpg 1x, img/events/mobile/events@2x.jpg 2x">
             <source media="(max-width: 1199px)"
+              srcset="img/events/tablet/events@1x.webp 1x, img/events/tablet/events@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1199px)"
               srcset="img/events/tablet/events@1x.jpg 1x, img/events/tablet/events@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/events/desktop/events@1x.webp 1x, img/events/desktop/events@2x.webp 2x" type="image/webp">
             <img srcset="img/events/desktop/events@1x.jpg 1x, img/events/desktop/events@2x.jpg 2x"
-              alt="Спостмен заряжен на победу в SUPER GAME.">
+              alt="Спостмен заряжен на победу в SUPER GAME." width="660" height="500">
           </picture>
         </div>
       </section>
 
-      <section class="about-coaches">
+      <section class="about-coaches" id="about-coaches">
         <div class="container about-coaches__inner">
           <h2 class="about-coaches__title">Тренеры</h2>
           <div class="about-coaches__swiper"">
@@ -285,9 +333,12 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <source media="(max-width: 1199px)" srcset="">
-                  <img srcset="img/about-coaches/coache-1@1x.jpg 1x, img/about-coaches/coache-1@2x.jpg 2x"
-                    alt="Тренер Анна Павлова.">
+                  <source media="(min-width: 320px)"
+                    srcset="img/about-coaches/desktop/coache-1@1x.webp 1x, img/about-coaches/desktop/coache-1@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-1@1x.jpg 1x, img/about-coaches/desktop/coache-1@2x.jpg 2x"
+                    alt="Тренер Анна Павлова." width="260" height="294">
                 </picture>
               </div>
               <div class="about-coaches__item coache swiper-slide">
@@ -302,8 +353,12 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x"
-                    alt="Тренер Анна Павлова.">
+                  <source media="(min-width: 320px)"
+                    srcset="img/about-coaches/desktop/coache-2@1x.webp 1x, img/about-coaches/desktop/coache-2@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-2@1x.jpg 1x, img/about-coaches/desktop/coache-2@2x.jpg 2x"
+                    alt="Тренер Алексей Лавров." width="260" height="294">
                 </picture>
               </div>
               <div class="about-coaches__item coache swiper-slide">
@@ -318,8 +373,12 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x"
-                    alt="Тренер Александр Пашков.">
+                  <source media="(min-width: 320px)"
+                    srcset="img/about-coaches/desktop/coache-2@1x.webp 1x, img/about-coaches/desktop/coache-2@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-2@1x.jpg 1x, img/about-coaches/desktop/coache-2@2x.jpg 2x"
+                    alt="Тренер Александр Пашков." width="260" height="294">
                 </picture>
               </div>
               <div class="about-coaches__item coache swiper-slide">
@@ -334,8 +393,17 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-4@1x.jpg 1x, img/about-coaches/coache-4@2x.jpg 2x"
-                    alt="Тренер Анна Павлова.">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/about-coaches/tablet/coache-4@1x.webp 1x, img/about-coaches/tablet/coache-4@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/about-coaches/tablet/coache-4@1x.jpg 1x, img/about-coaches/tablet/coache-4@2x.jpg 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/about-coaches/desktop/coache-4@1x.webp 1x, img/about-coaches/desktop/coache-4@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-4@1x.jpg 1x, img/about-coaches/desktop/coache-4@2x.jpg 2x"
+                    alt="Тренер Мария Кетова." width="260" height="294">
                 </picture>
               </div>
               <div class="about-coaches__item coache swiper-slide">
@@ -350,8 +418,12 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-1@1x.jpg 1x, img/about-coaches/coache-1@2x.jpg 2x"
-                    alt="Тренер Анна Павлова.">
+                  <source media="(min-width: 320px)"
+                    srcset="img/about-coaches/desktop/coache-1@1x.webp 1x, img/about-coaches/desktop/coache-1@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-1@1x.jpg 1x, img/about-coaches/desktop/coache-1@2x.jpg 2x"
+                    alt="Тренер Анна Павлова." width="260" height="294">
                 </picture>
               </div>
               <div class="about-coaches__item coache swiper-slide">
@@ -366,8 +438,12 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x"
-                    alt="Тренер Анна Павлова.">
+                  <source media="(min-width: 320px)"
+                    srcset="img/about-coaches/desktop/coache-2@1x.webp 1x, img/about-coaches/desktop/coache-2@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-2@1x.jpg 1x, img/about-coaches/desktop/coache-2@2x.jpg 2x"
+                    alt="Тренер Алексей Лавров." width="260" height="294">
                 </picture>
               </div>
               <div class="about-coaches__item coache swiper-slide">
@@ -382,8 +458,12 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-2@1x.jpg 1x, img/about-coaches/coache-2@2x.jpg 2x"
-                    alt="Тренер Александр Пашков.">
+                  <source media="(min-width: 320px)"
+                    srcset="img/about-coaches/desktop/coache-2@1x.webp 1x, img/about-coaches/desktop/coache-2@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-2@1x.jpg 1x, img/about-coaches/desktop/coache-2@2x.jpg 2x"
+                    alt="Тренер Александр Пашков." width="260" height="294">
                 </picture>
               </div>
               <div class="about-coaches__item coache swiper-slide">
@@ -398,8 +478,17 @@
                   </ul>
                 </div>
                 <picture class="coache__photo">
-                  <img srcset="img/about-coaches/coache-4@1x.jpg 1x, img/about-coaches/coache-4@2x.jpg 2x"
-                    alt="Тренер Анна Павлова.">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/about-coaches/tablet/coache-4@1x.webp 1x, img/about-coaches/tablet/coache-4@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/about-coaches/tablet/coache-4@1x.jpg 1x, img/about-coaches/tablet/coache-4@2x.jpg 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/about-coaches/desktop/coache-4@1x.webp 1x, img/about-coaches/desktop/coache-4@2x.webp 2x"
+                    type="image/webp">
+                  <img
+                    srcset="img/about-coaches/desktop/coache-4@1x.jpg 1x, img/about-coaches/desktop/coache-4@2x.jpg 2x"
+                    alt="Тренер Мария Кетова." width="260" height="294">
                 </picture>
               </div>
             </div>
@@ -463,7 +552,7 @@
     </div>
   </section>
 
-  <section class="stocks">
+  <section class="stocks" id="stocks">
     <div class="container stocks__inner">
       <h2 class="stocks__title">Акции</h2>
       <div class="stocks__content">
@@ -477,9 +566,15 @@
           </div>
           <picture class="main-stock__image">
             <source media="(max-width: 767px)"
+              srcset="img/stocks/mobile/stocks@1x.webp 1x, img/stocks/mobile/stocks@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)"
               srcset="img/stocks/mobile/stocks@1x.jpg 1x, img/stocks/mobile/stocks@2x.jpg 2x">
             <source media="(max-width: 1199px)"
+              srcset="img/stocks/tablet/stocks@1x.webp 1x, img/stocks/tablet/stocks@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1199px)"
               srcset="img/stocks/tablet/stocks@1x.jpg 1x, img/stocks/tablet/stocks@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/stocks/desktop/stocks@1x.webp 1x, img/stocks/desktop/stocks@2x.webp 2x" type="image/webp">
             <img srcset="img/stocks/desktop/stocks@1x.jpg 1x, img/stocks/desktop/stocks@2x.jpg 2x"
               alt="Светловолосая девушка в спортивной одежде на фоне синего неба." width="280" height="462">
           </picture>
@@ -488,12 +583,12 @@
           <li class="stock">
             <h3 class="stock__name">Месяц бесплатно</h3>
             <p class="stock__desc">Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
-            <a href="" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
+            <a href="sitemap.html" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </li>
           <li class="stock">
             <h3 class="stock__name">Скидка 20%</h3>
             <p class="stock__desc">Корпоративный фитнес с&nbsp;командой</p>
-            <a href="" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
+            <a href="sitemap.html" class="stock__link" aria-label="Кнопка перехода к более подробному описанию.">подробнее</a>
           </li>
         </ul>
       </div>
@@ -508,8 +603,14 @@
           <div class="swiper-wrapper reviews__swiper-wrapper">
             <div class="reviews__item review swiper-slide">
               <picture class="review__avatar">
-                <source media="(max-width: 768px)"
+                <source media="(max-width: 767px)"
+                  srcset="img/reviews/mobile/review-1@1x.webp 1x, img/reviews/mobile/review-1@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 767px)"
                   srcset="img/reviews/mobile/review-1@1x.png 1x, img/reviews/mobile/review-1@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/reviews/desktop-tablet/review-1@1x.webp 1x, img/reviews/desktop-tablet/review-1@2x.webp 2x"
+                  type="image/webp">
                 <img
                   srcset="img/reviews/desktop-tablet/review-1@1x.png 1x, img/reviews/desktop-tablet/review-1@2x.png 2x"
                   alt="Аватар Анны Орловы." width="80" height="80">
@@ -521,8 +622,12 @@
             </div>
             <div class="reviews__item review swiper-slide">
               <picture class="review__avatar">
-                <source media="(max-width: 768px)"
+                <source media="(max-width: 767px)" srcset="img/reviews/mobile/review-1@1x.webp 1x, img/reviews/mobile/review-1@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)"
                   srcset="img/reviews/mobile/review-1@1x.png 1x, img/reviews/mobile/review-1@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/reviews/desktop-tablet/review-1@1x.webp 1x, img/reviews/desktop-tablet/review-1@2x.webp 2x"
+                  type="image/webp">
                 <img
                   srcset="img/reviews/desktop-tablet/review-1@1x.png 1x, img/reviews/desktop-tablet/review-1@2x.png 2x"
                   alt="Аватар Анны Орловы." width="80" height="80">
@@ -549,20 +654,21 @@
           <h2 class="form__title">Бесплатное занятие </h2>
           <div class="form__wrapper" data-form-validate data-callback="base">
             <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__input" data-required data-validate-type="text" data-limitation="name">
-              <label class="visually-hidden" for="username">Поле для ввода имени</label>
-              <input type="text" name="username" id="username" placeholder="Имя">
-            </div>
-            <div class="form__input" data-required data-validate-type="phone" data-on-input-validate>
-              <label class="visually-hidden" for="user-phone">Поле для ввода имени</label>
-              <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон">
-            </div>
-            <button class="btn" type="submit" aria-label="Отправить заявку." aria-pressed="true"><span>отправить</span></button>
-          </form>
+              <div class="form__input" data-required data-validate-type="text" data-limitation="name">
+                <label class="visually-hidden" for="username">Поле для ввода имени</label>
+                <input type="text" name="username" id="username" placeholder="Имя">
+              </div>
+              <div class="form__input" data-required data-validate-type="phone" data-on-input-validate>
+                <label class="visually-hidden" for="user-phone">Поле для ввода имени</label>
+                <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон">
+              </div>
+              <button class="btn" type="submit" aria-label="Отправить заявку."
+                aria-pressed="true"><span>отправить</span></button>
+            </form>
           </div>
         </div>
       </div>
-      <div class="feedback__contacts contacts">
+      <div class="feedback__contacts contacts" id="contacts">
         <div class="contacts__inner-container">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__info">
@@ -606,7 +712,7 @@
           <a class="footer__link" href="sitemap.html" aria-label="Перейти на страницу Услуги.">Услуги</a>
         </li>
         <li class="footer__nav-item">
-          <a class="footer__link" href="#" aria-label="Перейти к разделу Абонементы.">Абонементы</a>
+          <a class="footer__link" href="#subscriptions" aria-label="Перейти к разделу Абонементы.">Абонементы</a>
         </li>
       </ul>
       <ul class="footer__nav-list">

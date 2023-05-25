@@ -18,6 +18,9 @@ const initSwipers = () => {
             initialSlide: 0,
             slidesPerView: 1,
           },
+          768: {
+            spaceBetween: 30,
+          },
         },
       })
     )();
@@ -34,13 +37,13 @@ const initSwipers = () => {
         },
 
         breakpoints: {
-          319: {
+          320: {
             initialSlide: 2,
             slidesPerView: 1,
             spaceBetween: 0,
           },
 
-          767: {
+          769: {
             initialSlide: 2,
             slidesPerView: 2,
             spaceBetween: 30,
