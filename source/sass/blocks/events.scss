@@ -1,5 +1,5 @@
 .events {
-  padding: 123px 0 53px;
+  padding: 120px 0 53px;
 
   @include vp-1200 {
     padding: 100px 0 53px;
@@ -31,7 +31,7 @@
   grid-template-columns: 1fr 96px;
   column-gap: 60px;
   color: $color-default-white;
-  padding: 81px 78px 75px 75px;
+  padding: 81px 78px 74px 75px;
   background-color: $color-saturated-red;
 
   @include vp-1200 {
@@ -176,6 +176,7 @@
 .events__btn {
   grid-column: 2 span;
   min-height: 69px;
+  padding-block: 25px 24px;
 
   span {
     margin: auto;

@@ -7,7 +7,7 @@
   border-top: 1px solid $color-light-slate-grey;
 
   @include vp-1200 {
-    padding-block: 66px;
+    padding-block: 66px 67px;
     border-top: 0;
   }
 
@@ -101,7 +101,7 @@
   row-gap: 25px;
 
   @include vp-1200 {
-    row-gap: 30px;
+    row-gap: 29px;
   }
 
   @include vp-767 {

@@ -3,13 +3,13 @@
 }
 
 .footer__inner {
-  padding-block: 43px 33px;
+  padding-block: 42px 33px;
   display: flex;
   flex-direction: row;
   gap: 40px;
 
   @include vp-1200 {
-    padding-block: 47px 41px;
+    padding-block: 45px 41px;
     padding-inline: 45px 39px;
     gap: 30px;
   }
@@ -19,8 +19,8 @@
     grid-template-columns: 142px 1fr;
     padding-inline: 15px;
     column-gap: 18px;
-    row-gap: 15px;
-    padding-bottom: 52px;
+    row-gap: 16px;
+    padding-block: 47px 52px;
   }
 }
 
@@ -28,13 +28,15 @@
   cursor: pointer;
   height: max-content;
   padding-block: 8px;
+  display: inline-block;
 
   @include vp-1200 {
-    padding-block: 2px 8px;
+    padding-block: 3px 8px;
+
+    max-width: 81px;
 
     img {
-      min-width: 82px;
-      min-height: 18px;
+      min-width: 100%;
     }
   }
 
@@ -42,7 +44,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     max-width: 68px;
-    padding-block: 4px 7px;
+    padding-block: 4px;
 
     img {
       min-width: 68px;
@@ -91,7 +93,7 @@
     flex-direction: column;
     row-gap: 15px;
 
-    &:last-of-type {
+    &:not(:first-of-type) {
       grid-column: 2 / 3;
       grid-row: 1 / 3;
     }
