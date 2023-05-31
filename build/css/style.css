@@ -3465,8 +3465,12 @@ button,
 }
 @media (max-width: 767px) {
   .benefit__value {
-    background: -o-linear-gradient(307.49deg, #d10a42 0, #0041ca 87.33%);
-    background: linear-gradient(142.51deg, #d10a42 0, #0041ca 87.33%);
+    margin-inline: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background: -o-linear-gradient(307.49deg, #d10a42 0, #0041ca 83.33%);
+    background: linear-gradient(142.51deg, #d10a42 0, #0041ca 83.33%);
     -webkit-background-clip: text;
             background-clip: text;
   }
