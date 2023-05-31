@@ -3217,9 +3217,14 @@ button,
 }
 @media (max-width: 1199px) {
   .benefits__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (-webkit-max-content)[2];
+    -ms-grid-columns: (max-content)[2];
+    grid-template-columns: repeat(2, -webkit-max-content);
+    grid-template-columns: repeat(2, max-content);
     row-gap: 43px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 767px) {
@@ -3279,6 +3284,8 @@ button,
 }
 @media (max-width: 767px) {
   .benefits__additional {
+    max-width: 100%;
+    width: 100%;
     margin: 9px 0 6px;
     padding-top: 40px;
     padding-bottom: 30px;
