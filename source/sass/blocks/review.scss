@@ -13,10 +13,11 @@
 
   @include vp-767 {
     padding: 50px 25px 35px;
+    grid-template-rows: 68px auto;
     display: grid;
     grid-template-columns: 84px 1fr;
     column-gap: 15px;
-    row-gap: 30px;
+    row-gap: 6px;
   }
 }
 
