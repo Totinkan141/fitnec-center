@@ -1998,17 +1998,17 @@ button,
 
 .intro__video {
   left: 540px;
-  bottom: -115px;
+  top: 288px;
 }
 @media (max-width: 1199px) {
   .intro__video {
     max-width: 266px;
     max-height: 167px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: -83px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto 0;
   }
 }
 @media (max-width: 767px) {
