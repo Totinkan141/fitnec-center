@@ -4040,6 +4040,11 @@ button,
     padding: 0;
   }
 }
+@media (max-width: 767px) {
+  .feedback__inner {
+    padding: 0;
+  }
+}
 
 .form {
   color: #ffffff;
