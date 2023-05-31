@@ -12,6 +12,7 @@
   }
 
   @include vp-767 {
+    max-width: 614px;
     padding: 50px 25px 35px;
     grid-template-rows: 68px auto;
     display: grid;

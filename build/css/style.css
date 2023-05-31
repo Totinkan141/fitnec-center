@@ -3947,7 +3947,8 @@ button,
   background-repeat: no-repeat;
 }
 .reviews__swiper-btn:disabled {
-  display: none;
+  cursor: default;
+  opacity: 0.3;
 }
 @media (max-width: 767px) {
   .reviews__swiper-btn {
@@ -3993,6 +3994,7 @@ button,
 }
 @media (max-width: 767px) {
   .review {
+    max-width: 614px;
     padding: 50px 25px 35px;
     -ms-grid-rows: 68px auto;
     grid-template-rows: 68px auto;
