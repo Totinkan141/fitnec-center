@@ -3478,7 +3478,7 @@ button,
     margin-bottom: 33px;
   }
 
-  .intro__text:not(:first-child) {
+  .intro__text:not(:first-of-type) {
     display: none;
   }
 
@@ -3562,7 +3562,7 @@ button,
 
   .subscription__item {
     padding: 57px 13px 59px;
-    min-height: 448px;
+    min-height: 447px;
   }
 
   .events {
