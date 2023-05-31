@@ -2425,13 +2425,13 @@ button,
 }
 @media (max-width: 1199px) {
   .subscription__item {
-    padding: 57px 13px 59px;
+    padding: 57px 110px 59px;
     min-height: 447px;
   }
 }
 @media (max-width: 767px) {
   .subscription__item {
-    padding: 44px 13px 47px;
+    padding: 44px 34px 47px;
     min-height: 382px;
   }
 }
@@ -2531,6 +2531,11 @@ button,
   min-height: 66px;
   border-width: 2px;
   padding: 24px;
+}
+@media (max-width: 1199px) {
+  .subscription__btn-order {
+    max-width: 100%;
+  }
 }
 .subscription__btn-order span {
   margin: 0 auto;
