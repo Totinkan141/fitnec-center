@@ -116,7 +116,7 @@
   line-height: 24px;
 
   @include vp-1200 {
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       display: none;
     }
   }
@@ -146,27 +146,27 @@
 
 .intro__video {
   left: 540px;
-  bottom: -115px;
+  top: 288px;
 
   @include vp-1200 {
     max-width: 266px;
     max-height: 167px;
-
+    top: 0;
     left: 0;
     right: 0;
     bottom: -83px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto 0;
   }
 
   @include vp-767 {
+    max-width: 100%;
+    width: 100%;
+    max-height: none;
     position: relative;
     bottom: 0;
   }
 
   @include vp-374 {
-    max-width: 100%;
-    width: 100%;
     padding: 0;
     margin: 0;
   }

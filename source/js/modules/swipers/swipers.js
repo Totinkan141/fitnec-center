@@ -43,7 +43,7 @@ const initSwipers = () => {
             spaceBetween: 0,
           },
 
-          769: {
+          768: {
             initialSlide: 2,
             slidesPerView: 2,
             spaceBetween: 30,
@@ -51,7 +51,7 @@ const initSwipers = () => {
 
           1200: {
             initialSlide: 0,
-            slidesPerView: 4,
+            slidesPerView: 0,
             spaceBetween: 40,
           },
         },
