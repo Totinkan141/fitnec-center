@@ -41,6 +41,7 @@
   }
 
   @include vp-767 {
+    grid-template-columns: 110px 1fr;
     padding: 47px 44px 50px;
     min-height: 290px;
   }
