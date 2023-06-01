@@ -1699,6 +1699,9 @@ button,
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 14px;
+    text-align: left;
+    position: relative;
+    left: 239px;
   }
 }
 
@@ -1723,9 +1726,6 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
   }
 }
 
@@ -1748,6 +1748,12 @@ button,
   }
   .main-screen__title span {
     text-transform: lowercase;
+  }
+}
+@media (max-width: 767px) {
+  .main-screen__title {
+    position: relative;
+    left: 104px;
   }
 }
 
