@@ -2295,7 +2295,7 @@ button,
 }
 @media (max-width: 1199px) {
   .subscriptions__tabs {
-    margin-bottom: 57px;
+    margin-bottom: 37px;
     -webkit-column-gap: 53px;
        -moz-column-gap: 53px;
             column-gap: 53px;
@@ -2303,7 +2303,7 @@ button,
 }
 @media (max-width: 767px) {
   .subscriptions__tabs {
-    margin-bottom: 48px;
+    margin-bottom: 28px;
     -webkit-column-gap: 38px;
        -moz-column-gap: 38px;
             column-gap: 38px;
@@ -2984,7 +2984,7 @@ button,
   content: "";
   width: 26px;
   height: 42px;
-  top: 131px;
+  top: 127px;
   background-color: rgba(255, 255, 255, 0);
   border: 0;
   cursor: pointer;
@@ -2996,9 +2996,9 @@ button,
 }
 @media (max-width: 767px) {
   .about-coaches__swiper-btn {
-    width: 16px;
-    height: 30px;
-    background-size: 16px 30px;
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
   }
 }
 .about-coaches__swiper-btn--prev {
@@ -3006,21 +3006,21 @@ button,
 }
 @media (max-width: 767px) {
   .about-coaches__swiper-btn--prev {
-    top: 123px;
-    left: -35px;
+    top: 128px;
+    left: -33px;
   }
 }
 .about-coaches__swiper-btn--next {
-  right: -61px;
-  top: 125px;
+  right: -60px;
+  top: 126px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 @media (max-width: 767px) {
   .about-coaches__swiper-btn--next {
-    top: 122px;
-    right: -35px;
+    top: 128px;
+    right: -33px;
   }
 }
 
@@ -3959,14 +3959,14 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__swiper-btn {
-    width: 16px;
-    height: 32px;
-    background-size: 16px 32px;
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
   }
 }
 .reviews__swiper-btn--prev {
-  top: 103px;
-  left: -4px;
+  top: 104px;
+  left: 0;
 }
 @media (max-width: 767px) {
   .reviews__swiper-btn--prev {
@@ -3974,15 +3974,15 @@ button,
   }
 }
 .reviews__swiper-btn--next {
-  top: 98px;
-  right: -4px;
+  top: 97px;
+  right: 0;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 @media (max-width: 767px) {
   .reviews__swiper-btn--next {
-    top: calc(50% - 16px);
+    top: calc(50% - 11px);
   }
 }
 

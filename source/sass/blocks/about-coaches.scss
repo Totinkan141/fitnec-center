@@ -70,7 +70,7 @@
   content: "";
   width: 26px;
   height: 42px;
-  top: 131px;
+  top: 127px;
   background-color: $color-transparent;
   border: 0;
   cursor: pointer;
@@ -81,28 +81,28 @@
   background-repeat: no-repeat;
 
   @include vp-767 {
-    width: 16px;
-    height: 30px;
-    background-size: 16px 30px;
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
   }
 
   &--prev {
     left: -60px;
 
     @include vp-767 {
-      top: 123px;
-      left: -35px;
+      top: 128px;
+      left: -33px;
     }
   }
 
   &--next {
-    right: -61px;
-    top: 125px;
+    right: -60px;
+    top: 126px;
     transform: rotate(180deg);
 
     @include vp-767 {
-      top: 122px;
-      right: -35px;
+      top: 128px;
+      right: -33px;
     }
   }
 }
